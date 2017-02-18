@@ -5,6 +5,8 @@ title: Contributing
 
 ### Adding a repository
 
+If you wish to add a repository in the organisation, drop a message about the repository on the gitter channel [#Bytes_Club/General](https://gitter.im/Bytes_Club/General).
+
 ### Contributing to an existing project
 
 * Create a new branch while working on an issue.
