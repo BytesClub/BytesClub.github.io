@@ -2,7 +2,7 @@
 
 ![gitter](https://badges.gitter.im/gitterHQ/gitterHQ.github.io.svg)
 
-[bytesclub.github.io](WBUT In-House Code Club's Official Website)
+[WBUT In-House Code Club's Official Website](https://bytesclub.github.io/)
 
 ### Prerequisites
 
