@@ -8,6 +8,8 @@ title: Members
 ![mem_1](/images/members/rudra.png)
 [Rudra Nil Basu](http://rudranilbasu.github.io/)
 
+Game Designer and Programmer
+
 ### Second Year Undergraduate
 
 ![mem 2](/images/members/pg.png)

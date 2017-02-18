@@ -8,7 +8,7 @@ Bytes Club is an open source community by the students of WBUT In-House.
 
 ### Contributing
 
-Follow our [Contributing guidelines]() to get started.
+Follow our [Contributing guidelines](/contributing) to get started.
 
 ### Contact Us
 
