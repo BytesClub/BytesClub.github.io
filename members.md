@@ -8,5 +8,7 @@ title: Members
 ![mem_1](/images/members/rudra.png)
 [Rudra Nil Basu](http://rudranilbasu.github.io/)
 
+### Second Year Undergraduate
+
 ![mem 2](/images/members/pg.png)
 [Progyan Bhattacharya](https://www.linkedin.com/in/progyan-bhattacharya/)
