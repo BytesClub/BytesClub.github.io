@@ -6,4 +6,4 @@ title: Members
 ### Third Year Undergraduate
 
 ![mem_1](/images/members/rudra.png)
-Rudra Nil Basu
+[Rudra Nil Basu](http://rudranilbasu.github.io/)
