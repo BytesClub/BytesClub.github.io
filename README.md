@@ -1,6 +1,6 @@
 # WBUT Code Club Website
 
-![gitter](https://badges.gitter.im/gitterHQ/gitterHQ.github.io.svg)
+[![gitter](https://badges.gitter.im/gitterHQ/gitterHQ.github.io.svg)](https://gitter.im/Bytes_Club/General)
 
 [WBUT In-House Code Club's Official Website](https://bytesclub.github.io/)
 
