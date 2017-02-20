@@ -3,6 +3,7 @@ layout: page
 title: Projects
 ---
 
+
 ### Battery Manager
 
 A python script to notify when the battery is fully charged.
@@ -16,3 +17,14 @@ A python script to notify when the battery is fully charged.
 **Contributors**
 
 * [Rudra Nil Basu](https://github.com/RudraNilBasu)
+* [Amit Tiwary](https://github.com/amitiwary999)
+
+{% for projecs in site.project %}
+	<p>Hello!</p>
+	{% if projects.title != null %}
+		{% if projects.layout == "projects" %}
+			<p>Hello!</p>
+			<a href="#">{{ projects.title }}</a>
+		{% endif %}
+	{% endif %}
+{% endfor %}
