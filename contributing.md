@@ -9,6 +9,7 @@ If you wish to add a repository in the organisation, write about the project det
 
 ### For Beginners
 
+* Introduce yourself by sending a mail to the mailing list ( [bytes-club@googlegroups.com](mailto:bytes-club@googlegroups.com) ), providing your past experiences. We surely have something for you.
 * If you are a beginner and don't know where to start, head over to the [Github page of the organisation](https://github.com/BytesClub), and look for a project which you are interested in.
 * Setup the project by following the Documentation on your local machine (usually the `README` file).
 
