@@ -9,6 +9,7 @@ title: Members
 
 ### Second Year Undergraduate
 * [Progyan Bhattacharya](https://www.linkedin.com/in/progyan-bhattacharya/)
+* [Biswajit Kundu](https://www.facebook.com/biswajit.kundu.29)
 
 <!--
 ![mem_1](/images/members/rudra.png)
