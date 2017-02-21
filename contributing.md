@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contributing
+title: Contribution
 ---
 
 ### Adding a repository
@@ -23,7 +23,7 @@ If you wish to add a repository in the organisation, write about the project det
 
 In case you face any kind of trouble, feel free to ask in the gitter channel [#Bytes_Club/General](https://gitter.im/Bytes_Club/General).
 
-### Tips for Contributing
+### Tips for Contribution
 
 * Create a new branch while working on an issue.
 * Use proper commit messages. A typical commit message should look like this: 
