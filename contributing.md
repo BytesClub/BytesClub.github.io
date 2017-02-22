@@ -19,7 +19,7 @@ If you wish to add a repository in the organisation, write about the project det
 
 ##### Solving an issue
 * Go to the issues tab, and look for the issues which interests you. If you are a beginner, look for the label `dificulty/easy` to start with.
-* Work on the issue by forking the repository in your account, work on the issue and create a Pull Request regarding the same. For more details, read the [tips for contributing](#tips-for-contributing)
+* Work on the issue by forking the repository in your account, work on the issue and create a Pull Request regarding the same. For more details, read the [tips for contributing](#tips-for-contribution)
 
 In case you face any kind of trouble, feel free to ask in the gitter channel [#Bytes_Club/General](https://gitter.im/Bytes_Club/General).
 
