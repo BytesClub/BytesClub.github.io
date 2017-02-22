@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>BytesClub</title>
+ <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
+ <link href="https://github.com/BytesClub/"/>
+ <updated>2017-02-22T19:52:15+05:30</updated>
+ <id>https://github.com/BytesClub</id>
+ <author>
+   <name>Bytes CLub</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Bytes Club</title>
+   <link href="https://github.com/BytesClub/2017/02/18/introducing-bytesclub/"/>
+   <updated>2017-02-18T00:00:00+05:30</updated>
+   <id>https://github.com/BytesClub/2017/02/18/introducing-bytesclub</id>
+   <content type="html">&lt;p&gt;Bytes Club is an open source community by the students of WBUT In-House.&lt;/p&gt;
+
+&lt;h3 id=&quot;contributing&quot;&gt;Contributing&lt;/h3&gt;
+
+&lt;p&gt;Follow our &lt;a href=&quot;/contributing&quot;&gt;Contributing guidelines&lt;/a&gt; to get started.&lt;/p&gt;
+
+&lt;h3 id=&quot;contact-us&quot;&gt;Contact Us&lt;/h3&gt;
+
+&lt;p&gt;Contact us on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gitter.im/Bytes_Club/General&quot;&gt;#Bytes_Club/General&lt;/a&gt; Gitter channel&lt;/li&gt;
+  &lt;li&gt;Mailing List- &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#098;&amp;#121;&amp;#116;&amp;#101;&amp;#115;&amp;#045;&amp;#099;&amp;#108;&amp;#117;&amp;#098;&amp;#064;&amp;#103;&amp;#111;&amp;#111;&amp;#103;&amp;#108;&amp;#101;&amp;#103;&amp;#114;&amp;#111;&amp;#117;&amp;#112;&amp;#115;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#098;&amp;#121;&amp;#116;&amp;#101;&amp;#115;&amp;#045;&amp;#099;&amp;#108;&amp;#117;&amp;#098;&amp;#064;&amp;#103;&amp;#111;&amp;#111;&amp;#103;&amp;#108;&amp;#101;&amp;#103;&amp;#114;&amp;#111;&amp;#117;&amp;#112;&amp;#115;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/718359538212066/&quot;&gt;Facebook Group&lt;/a&gt;, if you are a student of WBUT In-House&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+
+</feed>
