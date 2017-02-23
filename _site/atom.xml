@@ -4,13 +4,36 @@
  <title>BytesClub</title>
  <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
  <link href="https://github.com/BytesClub/"/>
- <updated>2017-02-22T19:52:15+05:30</updated>
+ <updated>2017-02-23T21:50:19+05:30</updated>
  <id>https://github.com/BytesClub</id>
  <author>
    <name>Bytes CLub</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Introduction to Git</title>
+   <link href="https://github.com/BytesClub/2017/02/23/introduction-to-git/"/>
+   <updated>2017-02-23T00:00:00+05:30</updated>
+   <id>https://github.com/BytesClub/2017/02/23/introduction-to-git</id>
+   <content type="html">&lt;p&gt;Git is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Version_control&quot;&gt;version control system&lt;/a&gt; to track changes in files in a computer and allow multiple people to work on those files. It was created by &lt;a href=&quot;https://www.youtube.com/watch?v=IVpOyKCNZYw&quot;&gt;Linus Torvals&lt;/a&gt; &lt;sup id=&quot;fnref:ted&quot;&gt;&lt;a href=&quot;#fn:ted&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, in less than 2 weeks.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-we-need-git&quot;&gt;Why we need git&lt;/h3&gt;
+
+&lt;p&gt;Simply put, it is like checkpoints in games, and we can fearlessly modify code, without creating a backup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/git/git-copies.png&quot; alt=&quot;copy&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:ted&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://youtu.be/o8NPllzkFhE&quot;&gt;The mind behind Linux - Linus Torvalds&lt;/a&gt; &lt;a href=&quot;#fnref:ted&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Bytes Club</title>
