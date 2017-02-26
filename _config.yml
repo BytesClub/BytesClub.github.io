@@ -19,6 +19,7 @@ author:
   url:            https://twitter.com/WBUTcoders
 
 paginate:         5
+excerpt_separator: "\n\n"
 
 # Custom vars
 version:          1.0.1
