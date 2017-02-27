@@ -138,10 +138,25 @@
 </div>
 <p>to create a new git repository</p>
 
+<h3 id="remotes">Remotes</h3>
+
+<p>The changes in git are made on a local copy of the repository. To communicate this with the outside world, git uses <em>remotes</em>. These are the repositories other than the repository on your local disc where you can push the changes made from the local repository. To create a new remote, named <em>origin</em> (it can be any other name) we use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git remote add origin &lt;url&gt;
+</code></pre>
+</div>
+
+<p>This creates a new remote called <code class="highlighter-rouge">origin</code> located at <code class="highlighter-rouge">&lt;url&gt;</code>. Once this is done, we can just write <em>origin</em> in the push command instead of typing the whole URL.</p>
+
+<p>For more explanations, check footnotes <sup id="fnref:remote"><a href="#fn:remote" class="footnote">2</a></sup></p>
+
 <div class="footnotes">
   <ol>
     <li id="fn:ted">
       <p><a href="https://youtu.be/o8NPllzkFhE">The mind behind Linux - Linus Torvalds</a> <a href="#fnref:ted" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:remote">
+      <p><a href="http://stackoverflow.com/questions/5617211/what-is-git-remote-add-and-git-push-origin-master/5617350#5617350">What is <code class="highlighter-rouge">git add remote</code> and <code class="highlighter-rouge">git push origin master</code></a> <a href="#fnref:remote" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

@@ -29,6 +29,18 @@ git init
 ```
 to create a new git repository
 
-[^ted]: [The mind behind Linux - Linus Torvalds](https://youtu.be/o8NPllzkFhE)
+### Remotes
 
+The changes in git are made on a local copy of the repository. To communicate this with the outside world, git uses _remotes_. These are the repositories other than the repository on your local disc where you can push the changes made from the local repository. To create a new remote, named _origin_ (it can be any other name) we use:
+
+```
+git remote add origin <url>
+```
+
+This creates a new remote called `origin` located at `<url>`. Once this is done, we can just write _origin_ in the push command instead of typing the whole URL.
+
+For more explanations, check footnotes [^remote]
+
+[^ted]: [The mind behind Linux - Linus Torvalds](https://youtu.be/o8NPllzkFhE)
+[^remote]: [What is `git add remote` and `git push origin master`](http://stackoverflow.com/questions/5617211/what-is-git-remote-add-and-git-push-origin-master/5617350#5617350) 
 

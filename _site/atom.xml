@@ -4,7 +4,7 @@
  <title>BytesClub</title>
  <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
  <link href="https://github.com/BytesClub/"/>
- <updated>2017-02-26T17:14:35+05:30</updated>
+ <updated>2017-02-27T15:33:49+05:30</updated>
  <id>https://github.com/BytesClub</id>
  <author>
    <name>Bytes CLub</name>
@@ -42,10 +42,25 @@
 &lt;/div&gt;
 &lt;p&gt;to create a new git repository&lt;/p&gt;
 
+&lt;h3 id=&quot;remotes&quot;&gt;Remotes&lt;/h3&gt;
+
+&lt;p&gt;The changes in git are made on a local copy of the repository. To communicate this with the outside world, git uses &lt;em&gt;remotes&lt;/em&gt;. These are the repositories other than the repository on your local disc where you can push the changes made from the local repository. To create a new remote, named &lt;em&gt;origin&lt;/em&gt; (it can be any other name) we use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin &amp;lt;url&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This creates a new remote called &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; located at &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;url&amp;gt;&lt;/code&gt;. Once this is done, we can just write &lt;em&gt;origin&lt;/em&gt; in the push command instead of typing the whole URL.&lt;/p&gt;
+
+&lt;p&gt;For more explanations, check footnotes &lt;sup id=&quot;fnref:remote&quot;&gt;&lt;a href=&quot;#fn:remote&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:ted&quot;&gt;
       &lt;p&gt;&lt;a href=&quot;https://youtu.be/o8NPllzkFhE&quot;&gt;The mind behind Linux - Linus Torvalds&lt;/a&gt; &lt;a href=&quot;#fnref:ted&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:remote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/5617211/what-is-git-remote-add-and-git-push-origin-master/5617350#5617350&quot;&gt;What is &lt;code class=&quot;highlighter-rouge&quot;&gt;git add remote&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin master&lt;/code&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:remote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
