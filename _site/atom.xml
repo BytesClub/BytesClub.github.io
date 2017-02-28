@@ -4,7 +4,7 @@
  <title>BytesClub</title>
  <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
  <link href="https://github.com/BytesClub/"/>
- <updated>2017-02-27T15:33:49+05:30</updated>
+ <updated>2017-02-28T23:56:39+05:30</updated>
  <id>https://github.com/BytesClub</id>
  <author>
    <name>Bytes CLub</name>
@@ -13,11 +13,17 @@
 
  
  <entry>
-   <title>Introduction to Git</title>
+   <title>Introduction to Git and GitHub</title>
    <link href="https://github.com/BytesClub/2017/02/23/introduction-to-git/"/>
    <updated>2017-02-23T00:00:00+05:30</updated>
    <id>https://github.com/BytesClub/2017/02/23/introduction-to-git</id>
-   <content type="html">&lt;p&gt;Git is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Version_control&quot;&gt;version control system&lt;/a&gt; to track changes in files in a computer and allow multiple people to work on those files. It was created by &lt;a href=&quot;https://www.youtube.com/watch?v=IVpOyKCNZYw&quot;&gt;Linus Torvalds&lt;/a&gt; &lt;sup id=&quot;fnref:ted&quot;&gt;&lt;a href=&quot;#fn:ted&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, in less than 2 weeks.&lt;/p&gt;
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;“Real men use the command line”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;git&quot;&gt;Git&lt;/h1&gt;
+
+&lt;p&gt;Git is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Version_control&quot;&gt;version control system&lt;/a&gt; to track changes in files in a computer and allow multiple people to work on those files. It was created by &lt;a href=&quot;https://www.youtube.com/watch?v=IVpOyKCNZYw&quot;&gt;Linus Torvalds&lt;/a&gt; &lt;sup id=&quot;fnref:ted&quot;&gt;&lt;a href=&quot;#fn:ted&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, in less than 2 weeks.&lt;/p&gt;
 
 &lt;h3 id=&quot;why-we-need-git&quot;&gt;Why we need git&lt;/h3&gt;
 
@@ -42,6 +48,24 @@
 &lt;/div&gt;
 &lt;p&gt;to create a new git repository&lt;/p&gt;
 
+&lt;h3 id=&quot;add-changes&quot;&gt;Add changes&lt;/h3&gt;
+
+&lt;p&gt;After modifying/adding files on the repository, to add the changes made to the files in the staging area, use the &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &amp;lt;filename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;creating-a-checkpoint&quot;&gt;Creating a checkpoint&lt;/h3&gt;
+
+&lt;p&gt;Checkpoints in &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; is called a &lt;code class=&quot;highlighter-rouge&quot;&gt;commit&lt;/code&gt;, and we use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;. Basically &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt; records the changes to the repository.&lt;/p&gt;
+
+&lt;p&gt;For a single line commit message, this is used:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &amp;lt;commit message&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;h3 id=&quot;remotes&quot;&gt;Remotes&lt;/h3&gt;
 
 &lt;p&gt;The changes in git are made on a local copy of the repository. To communicate this with the outside world, git uses &lt;em&gt;remotes&lt;/em&gt;. These are the repositories other than the repository on your local disc where you can push the changes made from the local repository. To create a new remote, named &lt;em&gt;origin&lt;/em&gt; (it can be any other name) we use:&lt;/p&gt;
@@ -53,6 +77,92 @@
 &lt;p&gt;This creates a new remote called &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; located at &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;url&amp;gt;&lt;/code&gt;. Once this is done, we can just write &lt;em&gt;origin&lt;/em&gt; in the push command instead of typing the whole URL.&lt;/p&gt;
 
 &lt;p&gt;For more explanations, check footnotes &lt;sup id=&quot;fnref:remote&quot;&gt;&lt;a href=&quot;#fn:remote&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;cloning-a-repository&quot;&gt;Cloning a repository&lt;/h3&gt;
+
+&lt;p&gt;Instead of creating a fresh new repository, one may need to work on an already existing repository. For this purpose, cloning a repository comes handy.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone &amp;lt;remote_url&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This helps in creating a local copy of the repository present in &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;remote_url&amp;gt;&lt;/code&gt;. In this case, the remotes will automatically be set.&lt;/p&gt;
+
+&lt;h3 id=&quot;branches&quot;&gt;Branches&lt;/h3&gt;
+
+&lt;p&gt;Branches in git is used to develop features isolated from each other. Every git repository has a default branch called &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/git/branch.png&quot; alt=&quot;branch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Use other branches at the development stage and merge them to master on completion.&lt;/p&gt;
+
+&lt;p&gt;To create a new branch and switch to that branch, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout -b &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To switch back to the master branch, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Rather, to switch to any existing branch, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To delete an existing branch,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch -d &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;sending-your-commits&quot;&gt;Sending your commits&lt;/h3&gt;
+
+&lt;p&gt;As of now, all your changes are present in your local repository only. To send these changes to the remote repository, git uses &lt;code class=&quot;highlighter-rouge&quot;&gt;push&lt;/code&gt;. The syntax of which looks like:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push &amp;lt;remote_name&amp;gt; &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you want to send the changes (commits) made on the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch on the remote repository described by the &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; remote, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;git-structure&quot;&gt;Git Structure&lt;/h3&gt;
+
+&lt;p&gt;The very basic structure of git looks like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/git/structure.png&quot; alt=&quot;struct&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;github&quot;&gt;Github&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Github != git&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Github is a company that allows anyone to host their git repositories. Lot’s of major open source projects are hosted on GitHub, the most popular (and the most active) being the &lt;a href=&quot;https://github.com/torvalds/linux&quot;&gt;Linux Kernel&lt;/a&gt;. Many well known companies host their open source projects on GitHub like &lt;a href=&quot;https://github.com/google&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://github.com/facebook&quot;&gt;Facebook&lt;/a&gt; to just name a few.&lt;/p&gt;
+
+&lt;h3 id=&quot;issues&quot;&gt;Issues&lt;/h3&gt;
+
+&lt;p&gt;GitHub has a facility called &lt;em&gt;issues&lt;/em&gt;, which allows &lt;em&gt;anyone&lt;/em&gt; to file a bug report, problems related to the project or feature requests related to the project. If you are a developer wishing to contribute to the project, look through the issues and try to fix them. Also, look for the labels in each issue, if you are a beginner or willing to work on something specific.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But wait!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You may not have the permission to write on &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt;, what then ?&lt;/p&gt;
+
+&lt;h3 id=&quot;forks&quot;&gt;Forks&lt;/h3&gt;
+
+&lt;p&gt;Forking a repository means you have a copy of one repository on your own profile. You will have write access to your forked repository. Push the changes to the forked repository as a remote.&lt;/p&gt;
+
+&lt;h3 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h3&gt;
+
+&lt;p&gt;To get the original repositories check out your contributions to their project, you need to create a Pull Request. Create a Pull Request to the original repository, describing the changes you have made. The maintainers of the project will review it, and if they are satisfied with the changes, they will merge the Pull Request, and your code will be reflected on the original project.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;

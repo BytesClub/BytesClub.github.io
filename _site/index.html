@@ -115,13 +115,19 @@
   <div class="post">
     <h1 class="post-title">
       <a href="/2017/02/23/introduction-to-git/">
-        Introduction to Git
+        Introduction to Git and GitHub
       </a>
     </h1>
 
     <span class="post-date">23 Feb 2017</span>
 
-    <p>Git is a <a href="https://en.wikipedia.org/wiki/Version_control">version control system</a> to track changes in files in a computer and allow multiple people to work on those files. It was created by <a href="https://www.youtube.com/watch?v=IVpOyKCNZYw">Linus Torvalds</a> <sup id="fnref:ted"><a href="#fn:ted" class="footnote">1</a></sup>, in less than 2 weeks.</p>
+    <blockquote>
+  <p>“Real men use the command line”</p>
+</blockquote>
+
+<h1 id="git">Git</h1>
+
+<p>Git is a <a href="https://en.wikipedia.org/wiki/Version_control">version control system</a> to track changes in files in a computer and allow multiple people to work on those files. It was created by <a href="https://www.youtube.com/watch?v=IVpOyKCNZYw">Linus Torvalds</a> <sup id="fnref:ted"><a href="#fn:ted" class="footnote">1</a></sup>, in less than 2 weeks.</p>
 
 <h3 id="why-we-need-git">Why we need git</h3>
 
@@ -146,6 +152,24 @@
 </div>
 <p>to create a new git repository</p>
 
+<h3 id="add-changes">Add changes</h3>
+
+<p>After modifying/adding files on the repository, to add the changes made to the files in the staging area, use the <code class="highlighter-rouge">git add</code> command</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git add &lt;filename&gt;
+</code></pre>
+</div>
+
+<h3 id="creating-a-checkpoint">Creating a checkpoint</h3>
+
+<p>Checkpoints in <code class="highlighter-rouge">git</code> is called a <code class="highlighter-rouge">commit</code>, and we use the command <code class="highlighter-rouge">git commit</code>. Basically <code class="highlighter-rouge">git commit</code> records the changes to the repository.</p>
+
+<p>For a single line commit message, this is used:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit -m &lt;commit message&gt;
+</code></pre>
+</div>
+
 <h3 id="remotes">Remotes</h3>
 
 <p>The changes in git are made on a local copy of the repository. To communicate this with the outside world, git uses <em>remotes</em>. These are the repositories other than the repository on your local disc where you can push the changes made from the local repository. To create a new remote, named <em>origin</em> (it can be any other name) we use:</p>
@@ -157,6 +181,92 @@
 <p>This creates a new remote called <code class="highlighter-rouge">origin</code> located at <code class="highlighter-rouge">&lt;url&gt;</code>. Once this is done, we can just write <em>origin</em> in the push command instead of typing the whole URL.</p>
 
 <p>For more explanations, check footnotes <sup id="fnref:remote"><a href="#fn:remote" class="footnote">2</a></sup></p>
+
+<h3 id="cloning-a-repository">Cloning a repository</h3>
+
+<p>Instead of creating a fresh new repository, one may need to work on an already existing repository. For this purpose, cloning a repository comes handy.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone &lt;remote_url&gt;
+</code></pre>
+</div>
+
+<p>This helps in creating a local copy of the repository present in <code class="highlighter-rouge">&lt;remote_url&gt;</code>. In this case, the remotes will automatically be set.</p>
+
+<h3 id="branches">Branches</h3>
+
+<p>Branches in git is used to develop features isolated from each other. Every git repository has a default branch called <code class="highlighter-rouge">master</code>.</p>
+
+<p><img src="/images/git/branch.png" alt="branch" /></p>
+
+<p>Use other branches at the development stage and merge them to master on completion.</p>
+
+<p>To create a new branch and switch to that branch, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout -b &lt;branch_name&gt;
+</code></pre>
+</div>
+
+<p>To switch back to the master branch, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout master
+</code></pre>
+</div>
+
+<p>Rather, to switch to any existing branch, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git checkout &lt;branch_name&gt;
+</code></pre>
+</div>
+
+<p>To delete an existing branch,</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git branch -d &lt;branch_name&gt;
+</code></pre>
+</div>
+
+<h3 id="sending-your-commits">Sending your commits</h3>
+
+<p>As of now, all your changes are present in your local repository only. To send these changes to the remote repository, git uses <code class="highlighter-rouge">push</code>. The syntax of which looks like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git push &lt;remote_name&gt; &lt;branch_name&gt;
+</code></pre>
+</div>
+
+<p>If you want to send the changes (commits) made on the <code class="highlighter-rouge">master</code> branch on the remote repository described by the <code class="highlighter-rouge">origin</code> remote, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git push origin master
+</code></pre>
+</div>
+
+<h3 id="git-structure">Git Structure</h3>
+
+<p>The very basic structure of git looks like the following:</p>
+
+<p><img src="/images/git/structure.png" alt="struct" /></p>
+
+<h1 id="github">Github</h1>
+
+<blockquote>
+  <p>Github != git</p>
+</blockquote>
+
+<p>Github is a company that allows anyone to host their git repositories. Lot’s of major open source projects are hosted on GitHub, the most popular (and the most active) being the <a href="https://github.com/torvalds/linux">Linux Kernel</a>. Many well known companies host their open source projects on GitHub like <a href="https://github.com/google">Google</a>, <a href="https://github.com/facebook">Facebook</a> to just name a few.</p>
+
+<h3 id="issues">Issues</h3>
+
+<p>GitHub has a facility called <em>issues</em>, which allows <em>anyone</em> to file a bug report, problems related to the project or feature requests related to the project. If you are a developer wishing to contribute to the project, look through the issues and try to fix them. Also, look for the labels in each issue, if you are a beginner or willing to work on something specific.</p>
+
+<p><strong>But wait!</strong></p>
+
+<p>You may not have the permission to write on <code class="highlighter-rouge">origin</code>, what then ?</p>
+
+<h3 id="forks">Forks</h3>
+
+<p>Forking a repository means you have a copy of one repository on your own profile. You will have write access to your forked repository. Push the changes to the forked repository as a remote.</p>
+
+<h3 id="pull-requests">Pull Requests</h3>
+
+<p>To get the original repositories check out your contributions to their project, you need to create a Pull Request. Create a Pull Request to the original repository, describing the changes you have made. The maintainers of the project will review it, and if they are satisfied with the changes, they will merge the Pull Request, and your code will be reflected on the original project.</p>
 
 <div class="footnotes">
   <ol>
