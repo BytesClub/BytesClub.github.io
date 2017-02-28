@@ -16,6 +16,10 @@ Simply put, it is like checkpoints in games, and we can fearlessly modify code, 
 
 ![copy](/images/git/git-copies.png)
 
+Git is also fully distributive, allowing multiple people to work on a project easily, and maintaining the changes made by them.
+
+![copy](/images/git/vc.png)
+
 ### Installing git
 
 Git is installed on Debian/Ubuntu, from the package manager by:

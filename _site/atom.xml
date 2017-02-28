@@ -4,7 +4,7 @@
  <title>BytesClub</title>
  <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
  <link href="https://github.com/BytesClub/"/>
- <updated>2017-02-28T23:56:39+05:30</updated>
+ <updated>2017-03-01T00:05:16+05:30</updated>
  <id>https://github.com/BytesClub</id>
  <author>
    <name>Bytes CLub</name>
@@ -30,6 +30,10 @@
 &lt;p&gt;Simply put, it is like checkpoints in games, and we can fearlessly modify code, without creating a backup, removing the need to do this:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/git/git-copies.png&quot; alt=&quot;copy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Git is also fully distributive, allowing multiple people to work on a project easily, and maintaining the changes made by them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/git/vc.png&quot; alt=&quot;copy&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;installing-git&quot;&gt;Installing git&lt;/h3&gt;
 
