@@ -4,13 +4,73 @@
  <title>BytesClub</title>
  <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
  <link href="https://github.com/BytesClub/"/>
- <updated>2017-03-01T00:05:16+05:30</updated>
+ <updated>2017-03-01T20:10:29+05:30</updated>
  <id>https://github.com/BytesClub</id>
  <author>
    <name>Bytes CLub</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>SSH and it's use in GitHub</title>
+   <link href="https://github.com/BytesClub/2017/03/01/introduction-to-ssh/"/>
+   <updated>2017-03-01T00:00:00+05:30</updated>
+   <id>https://github.com/BytesClub/2017/03/01/introduction-to-ssh</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;“Privacy is Security, Security is Victory”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;what-is-ssh&quot;&gt;What is SSH&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Secure Shell (SSH)&lt;/strong&gt; is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Secure_Shell&quot;&gt;cryptographic network protocol&lt;/a&gt; for operating network services securely over an unsecured network.
+SSH provides a secure channel over an unsecured network in a client-server architecture, connecting an SSH client application with an SSH server. Common applications include remote command-line login and remote command execution, but any network service can be secured with SSH.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-does-it-works&quot;&gt;How does it works&lt;/h1&gt;
+&lt;p&gt;To use a manually generated public-private key pair to perform the authentication, allowing users or programs to log in without having to specify a password. In this scenario, anyone can produce a matching pair of different keys (public and private). The public key is placed on all computers that must allow access to the owner of the matching private key (the owner keeps the private key secret). While authentication is based on the private key, the key itself is never transferred through the network during authentication. SSH only verifies whether the same person offering the public key also owns the matching private key. In all versions of SSH it is important to verify unknown public keys, i.e. associate the public keys with identities, before accepting them as valid. Accepting an attacker’s public key without validation will authorize an unauthorized attacker as a valid user.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ssh_binary_packet_alt.svg/250px-Ssh_binary_packet_alt.svg.png&quot; alt=&quot;copy&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-use&quot;&gt;How to use&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Linux has native support for SSH, while Windows doesn’t. &lt;sup&gt;&lt;a href=&quot;http://arstechnica.com/information-technology/2015/06/microsoft-bringing-ssh-to-windows-and-powershell/&quot;&gt;Ref&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Git Bash by default contains SSH package.&lt;sup&gt;&lt;a href=&quot;https://git-for-windows.github.io/&quot;&gt;Download&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Navigate to
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;user/.ssh/&lt;/code&gt; in Windows&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;home/.ssh/&lt;/code&gt; in Linux&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;to list all the key-pair present in your machine. Only the file named &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa&lt;/code&gt;&lt;/strong&gt; will be considered in &lt;em&gt;bash&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Every key has a public counter-part, filename ending with &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.pub&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-create-a-new-key&quot;&gt;How to create a new key&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;The file will be stored in afforesaid directory along with the fingerprint.
+&lt;img src=&quot;https://confluence.atlassian.com/bitbucketserver/files/776639788/776639789/1/1386202193726/STASH_11_win_keygen_1.png&quot; alt=&quot;copy&quot; /&gt;
+&lt;img src=&quot;https://confluence.atlassian.com/bitbucketserver/files/776639788/776639790/1/1386202193276/STASH_11_win_keygen_2.png&quot; alt=&quot;copy&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;note-the-key-pair-will-create-effect-only-if-both-of-them-are-renamed-as-idrsa-and-idrsapub-respectively&quot;&gt;Note: The key-pair will create effect only if both of them are renamed as &lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa.pub&lt;/code&gt; respectively.&lt;/h4&gt;
+
+&lt;h3 id=&quot;how-to-deploy-keys-in-github&quot;&gt;How to deploy keys in GitHub&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Copy the content of the file &lt;strong&gt;id_rsa.pub&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Move to the &lt;strong&gt;Settings&lt;/strong&gt; option in right-top corner of the page&lt;/li&gt;
+  &lt;li&gt;In the user settings sidebar, click &lt;strong&gt;SSH and GPG keys&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;New SSH key&lt;/strong&gt; or &lt;strong&gt;Add SSH key&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Specify the &lt;strong&gt;Title&lt;/strong&gt; according to your machine/workspace and paste the content in &lt;strong&gt;Key&lt;/strong&gt; field.&lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;Add SSH key&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;If prompted, confirm your GitHub password.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;for-more-details-navigate-herehttpshelpgithubcomarticlesconnecting-to-github-with-ssh&quot;&gt;&lt;a href=&quot;https://help.github.com/articles/connecting-to-github-with-ssh/&quot;&gt;For more details, navigate here&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;happy-coding-&quot;&gt;Happy Coding! :)&lt;/h3&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Introduction to Git and GitHub</title>
@@ -57,6 +117,12 @@
 &lt;p&gt;After modifying/adding files on the repository, to add the changes made to the files in the staging area, use the &lt;code class=&quot;highlighter-rouge&quot;&gt;git add&lt;/code&gt; command&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &amp;lt;filename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To add all changed files to the staged area, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add -A
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 

@@ -45,6 +45,12 @@ After modifying/adding files on the repository, to add the changes made to the f
 git add <filename>
 ```
 
+To add all changed files to the staged area, use:
+
+```
+git add -A
+```
+
 ### Creating a checkpoint
 
 Checkpoints in `git` is called a `commit`, and we use the command `git commit`. Basically `git commit` records the changes to the repository.
