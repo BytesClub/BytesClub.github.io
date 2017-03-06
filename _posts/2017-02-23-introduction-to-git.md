@@ -153,6 +153,8 @@ You may not have the permission to write on `origin`, what then ?
 
 Forking a repository means you have a copy of one repository on your own profile. You will have write access to your forked repository. Push the changes to the forked repository as a remote.
 
+Protip: Do not fork a repository unless you are going to contribute to it
+
 ### Pull Requests
 
 To get the original repositories check out your contributions to their project, you need to create a Pull Request. Create a Pull Request to the original repository, describing the changes you have made. The maintainers of the project will review it, and if they are satisfied with the changes, they will merge the Pull Request, and your code will be reflected on the original project.
