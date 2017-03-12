@@ -10,7 +10,7 @@ permalink:        pretty
 # Setup
 title:            BytesClub
 tagline:          Coding Club, WBUT In-House
-description:      "Bytes Club is an open source community for WBUT In-House Students"
+description:      "An open source community for WBUT In-House Students"
 url:              https://github.com/BytesClub
 baseurl:          /
 
@@ -19,6 +19,7 @@ author:
   url:            https://twitter.com/WBUTcoders
 
 paginate:         5
+excerpt_separator: "\n\n"
 
 # Custom vars
 version:          1.0.1
