@@ -19,6 +19,21 @@ A python script to notify when the battery is fully charged.
 * [Rudra Nil Basu](https://github.com/RudraNilBasu)
 * [Amit Tiwary](https://github.com/amitiwary999)
 
+### Simulator
+
+Simulate Standard algorithms
+
+![scr](https://raw.githubusercontent.com/BytesClub/Simulator/master/branding/screen.gif)
+
+[Project Link](https://github.com/BytesClub/Simulator)
+
+**How to contribute**: Read [README](https://github.com/BytesClub/Simulator/blob/master/README.md)
+
+**Contributors**
+
+* [Rudra Nil Basu](https://github.com/RudraNilBasu)
+
+
 {% for projecs in site.project %}
 	<p>Hello!</p>
 	{% if projects.title != null %}
