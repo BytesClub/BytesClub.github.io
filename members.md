@@ -8,7 +8,7 @@ title: Members
 * [Amit Tiwary](https://github.com/amitiwary999)
 
 ### Second Year Undergraduate
-* [Progyan Bhattacharya](https://www.linkedin.com/in/progyan-bhattacharya/)
+* [Progyan Bhattacharya](http://www.codprogyan.me)
 * [Biswajit Kundu](https://www.facebook.com/biswajit.kundu.29)
 
 <!--
