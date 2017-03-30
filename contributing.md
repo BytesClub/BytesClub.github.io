@@ -37,3 +37,7 @@ fixes #<issue_number>
 ```
 
 For more information about proper commit messages, read [this](https://chris.beams.io/posts/git-commit/).
+
+### Coding Conventions
+
+We follow [this coding convention](https://www.gnu.org/prep/standards/html_node/Writing-C.html).
