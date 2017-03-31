@@ -4,7 +4,7 @@
  <title>BytesClub</title>
  <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
  <link href="https://github.com/BytesClub/"/>
- <updated>2017-03-01T20:10:29+05:30</updated>
+ <updated>2017-03-30T22:18:10+05:30</updated>
  <id>https://github.com/BytesClub</id>
  <author>
    <name>Bytes CLub</name>
@@ -229,6 +229,8 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 &lt;h3 id=&quot;forks&quot;&gt;Forks&lt;/h3&gt;
 
 &lt;p&gt;Forking a repository means you have a copy of one repository on your own profile. You will have write access to your forked repository. Push the changes to the forked repository as a remote.&lt;/p&gt;
+
+&lt;p&gt;Protip: Do not fork a repository unless you are going to contribute to it&lt;/p&gt;
 
 &lt;h3 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h3&gt;
 

@@ -34,6 +34,8 @@ shortlog: commit message
 commit body
 
 fixes #<issue_number>
+
+Signed-off-by: [Your name] <your email>
 ```
 
 For more information about proper commit messages, read [this](https://chris.beams.io/posts/git-commit/).
