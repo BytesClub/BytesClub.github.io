@@ -42,4 +42,4 @@ For more information about proper commit messages, read [this](https://chris.bea
 
 ### Coding Conventions
 
-We follow [this coding convention](https://www.gnu.org/prep/standards/html_node/Writing-C.html).
+We follow [the Linux Kernel's coding convention]({{ site.baseurl }}docs/coding_style.pdf).
