@@ -26,7 +26,7 @@ Contact us on:
 * Mailing List- [bytes-club@googlegroups.com](mailto:bytes-club@googlegroups.com)
 * [Facebook Group](https://www.facebook.com/groups/718359538212066/), if you are a student of WBUT In-House
 
-#### Donate
+### Donate
 
 To donate to Bytes Club, use this:
 
