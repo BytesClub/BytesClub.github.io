@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-
+<!--
 ### Battery Manager
 
 A python script to notify when the battery is fully charged.
@@ -33,13 +33,7 @@ Simulate Standard algorithms
 
 * [Rudra Nil Basu](https://github.com/RudraNilBasu)
 
-
-{% for projecs in site.project %}
+-->
+{% for projects in site._projects %}
 	<p>Hello!</p>
-	{% if projects.title != null %}
-		{% if projects.layout == "projects" %}
-			<p>Hello!</p>
-			<a href="#">{{ projects.title }}</a>
-		{% endif %}
-	{% endif %}
 {% endfor %}
