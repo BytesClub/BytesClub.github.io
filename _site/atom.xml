@@ -4,7 +4,7 @@
  <title>BytesClub</title>
  <link href="https://bytesclub.github.io//atom.xml" rel="self"/>
  <link href="https://bytesclub.github.io//"/>
- <updated>2017-04-08T13:00:20+05:30</updated>
+ <updated>2017-04-14T14:06:00+05:30</updated>
  <id>https://bytesclub.github.io/</id>
  <author>
    <name>Bytes CLub</name>
@@ -204,6 +204,39 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;h3 id=&quot;head&quot;&gt;HEAD&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; is a reference to the last commit in the currently checked out branch. &lt;sup id=&quot;fnref:head&quot;&gt;&lt;a href=&quot;#fn:head&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;diffs&quot;&gt;Diffs&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt; shows changes between commits, commit and working directory, etc.
+To see the uncommitted changes made, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For showing the changes made in the last &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; (let it be 3 here) commits &lt;sup id=&quot;fnref:diff_commit&quot;&gt;&lt;a href=&quot;#fn:diff_commit&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff HEAD~3..HEAD
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;By default, &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt; only splits out three lines of context above and below the changes. &lt;sup id=&quot;fnref:diff_full&quot;&gt;&lt;a href=&quot;#fn:diff_full&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:diff_full_2&quot;&gt;&lt;a href=&quot;#fn:diff_full_2&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; To view the entire file, we use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff --no-prefix -U1000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To save the diff in a file, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff &amp;gt; patch.diff
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;View &lt;a href=&quot;https://git-scm.com/docs/git-diff&quot;&gt;the documentations&lt;/a&gt; for more.&lt;/p&gt;
+
 &lt;h3 id=&quot;git-structure&quot;&gt;Git Structure&lt;/h3&gt;
 
 &lt;p&gt;The very basic structure of git looks like the following:&lt;/p&gt;
@@ -243,6 +276,18 @@ SSH provides a secure channel over an unsecured network in a client-server archi
     &lt;/li&gt;
     &lt;li id=&quot;fn:remote&quot;&gt;
       &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/5617211/what-is-git-remote-add-and-git-push-origin-master/5617350#5617350&quot;&gt;What is &lt;code class=&quot;highlighter-rouge&quot;&gt;git add remote&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin master&lt;/code&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:remote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:head&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2529971/what-is-the-head-in-git&quot;&gt;What is the HEAD in git?&lt;/a&gt; &lt;a href=&quot;#fnref:head&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:diff_commit&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2217452/in-git-how-do-i-create-a-single-patch-for-the-last-2-revisions&quot;&gt;create a patch for the last 2 revisions.&lt;/a&gt; &lt;a href=&quot;#fnref:diff_commit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:diff_full&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://trillworks.com/nick/2013/06/26/git-diff-with-full-context/&quot;&gt;git diff with full context&lt;/a&gt; &lt;a href=&quot;#fnref:diff_full&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:diff_full_2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/13627598/how-to-get-git-diff-with-full-context&quot;&gt;git diff with full context&lt;/a&gt; &lt;a href=&quot;#fnref:diff_full_2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
