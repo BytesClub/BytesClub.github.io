@@ -3,6 +3,9 @@ layout: page
 title: Members
 ---
 
+### Fourth Year Undergraduate
+* [Chinmay Rakshit](https://github.com/deathcod)
+
 ### Third Year Undergraduate
 * [Rudra Nil Basu](http://rudranilbasu.github.io/)
 * [Amit Tiwary](https://github.com/amitiwary999)
