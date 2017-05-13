@@ -18,19 +18,30 @@ style:
 			<img class="screenshot" src="{{site.github.url}}{{img-path}}/{{screenshot}}" alt="{{page.title}} Screenshot" border="0" width="500" height="273">
 		{% endfor %}
 	</section>
-	<div id="container" style="width:100%;">                                   
-  		<div id="left" style="float:left; width:50%;"> 
+	<div id="container" style="width:100%;">
+  		<div id="left" style="float:left; width:50%;">
   			<ul>
-  				<li>Made with: {{ page.engine }}</li>
+  				<li>Technology: {{ page.technology }}</li>
   				<li>Platform: {{ page.platform }}</li>
-  				<li>Genre: {{ page.genre }}</li>
-  				<li>Type: {{ page.type }}</li>
-  				<li>Role: {{ page.role }}</li>
+  				<li>Documentations: {{ page.genre }}</li>
+  				<li>Install instructions: {{ page.install }}</li>
   			</ul>
-  			<a href="{{ page.download }}" class="myButton">Download</a>
-  		</div>                     
-  		<div id="right" style="float:right; width:50%;">{{ page.content }}</div>                   
+  			<a target="_blank" href="{{ page.source }}" class="myButton">View Source Code</a>
+  		</div>
+  		<div id="right" style="float:right; width:50%;">{{ page.content }}<br></div>
 	</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+
+<h1>Maintainer</h1>
+<div id="left" style="float:left; width:50%;">
+<img id = "avatar" src="https://avatars.githubusercontent.com/RudraNilBasu" width="200" height="200"/>
+</div>
+<div id="right" style="float:right; width:50%;">
+<h3>{{page.maintainer}}</h3>
+<p>{{page.maintainer_desc}}<br><a href="https://github.com/{{ page.maintainer_github }}" target="_blank">Github</a></p>
 </div>
 
 <style>
@@ -52,6 +63,10 @@ style:
 	.screenshots img:hover {
 		transform: scale(1.15);
 	}
+
+  #avatar {
+    border-radius: 100%;
+  }
 
 	.myButton {
 	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
@@ -94,4 +109,3 @@ style:
 }
 
 </style>
-
