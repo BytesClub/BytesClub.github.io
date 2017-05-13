@@ -65,10 +65,6 @@
       
         
           
-        
-      
-        
-          
             <a class="sidebar-nav-item" href="/contributing/">Contribution</a>
           
         
@@ -121,7 +117,7 @@
 
     <span class="post-date">01 Mar 2017</span>
 
-    <blockquote>
+    <!--<blockquote>
   <p>“Privacy is Security, Security is Victory”</p>
 </blockquote>
 
@@ -173,7 +169,7 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 <h4 id="for-more-details-navigate-herehttpshelpgithubcomarticlesconnecting-to-github-with-ssh"><a href="https://help.github.com/articles/connecting-to-github-with-ssh/">For more details, navigate here</a></h4>
 
 <h3 id="happy-coding-">Happy Coding! :)</h3>
-
+-->
   </div>
   
   <div class="post">
@@ -185,7 +181,7 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 
     <span class="post-date">23 Feb 2017</span>
 
-    <blockquote>
+    <!--<blockquote>
   <p>“Real men use the command line”</p>
 </blockquote>
 
@@ -312,6 +308,39 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 </code></pre>
 </div>
 
+<h3 id="head">HEAD</h3>
+
+<p><code class="highlighter-rouge">HEAD</code> is a reference to the last commit in the currently checked out branch. <sup id="fnref:head"><a href="#fn:head" class="footnote">3</a></sup></p>
+
+<h3 id="diffs">Diffs</h3>
+
+<p><code class="highlighter-rouge">git diff</code> shows changes between commits, commit and working directory, etc.
+To see the uncommitted changes made, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git diff
+</code></pre>
+</div>
+
+<p>For showing the changes made in the last <code class="highlighter-rouge">x</code> (let it be 3 here) commits <sup id="fnref:diff_commit"><a href="#fn:diff_commit" class="footnote">4</a></sup>, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git diff HEAD~3..HEAD
+</code></pre>
+</div>
+
+<p>By default, <code class="highlighter-rouge">git diff</code> only splits out three lines of context above and below the changes. <sup id="fnref:diff_full"><a href="#fn:diff_full" class="footnote">5</a></sup> <sup id="fnref:diff_full_2"><a href="#fn:diff_full_2" class="footnote">6</a></sup> To view the entire file, we use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git diff --no-prefix -U1000
+</code></pre>
+</div>
+
+<p>To save the diff in a file, use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git diff &gt; patch.diff
+</code></pre>
+</div>
+
+<p>View <a href="https://git-scm.com/docs/git-diff">the documentations</a> for more.</p>
+
 <h3 id="git-structure">Git Structure</h3>
 
 <p>The very basic structure of git looks like the following:</p>
@@ -338,6 +367,8 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 
 <p>Forking a repository means you have a copy of one repository on your own profile. You will have write access to your forked repository. Push the changes to the forked repository as a remote.</p>
 
+<p>Protip: Do not fork a repository unless you are going to contribute to it</p>
+
 <h3 id="pull-requests">Pull Requests</h3>
 
 <p>To get the original repositories check out your contributions to their project, you need to create a Pull Request. Create a Pull Request to the original repository, describing the changes you have made. The maintainers of the project will review it, and if they are satisfied with the changes, they will merge the Pull Request, and your code will be reflected on the original project.</p>
@@ -350,9 +381,21 @@ SSH provides a secure channel over an unsecured network in a client-server archi
     <li id="fn:remote">
       <p><a href="http://stackoverflow.com/questions/5617211/what-is-git-remote-add-and-git-push-origin-master/5617350#5617350">What is <code class="highlighter-rouge">git add remote</code> and <code class="highlighter-rouge">git push origin master</code></a> <a href="#fnref:remote" class="reversefootnote">&#8617;</a></p>
     </li>
+    <li id="fn:head">
+      <p><a href="http://stackoverflow.com/questions/2529971/what-is-the-head-in-git">What is the HEAD in git?</a> <a href="#fnref:head" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:diff_commit">
+      <p><a href="http://stackoverflow.com/questions/2217452/in-git-how-do-i-create-a-single-patch-for-the-last-2-revisions">create a patch for the last 2 revisions.</a> <a href="#fnref:diff_commit" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:diff_full">
+      <p><a href="https://trillworks.com/nick/2013/06/26/git-diff-with-full-context/">git diff with full context</a> <a href="#fnref:diff_full" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:diff_full_2">
+      <p><a href="http://stackoverflow.com/questions/13627598/how-to-get-git-diff-with-full-context">git diff with full context</a> <a href="#fnref:diff_full_2" class="reversefootnote">&#8617;</a></p>
+    </li>
   </ol>
 </div>
-
+-->
   </div>
   
   <div class="post">
@@ -364,7 +407,7 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 
     <span class="post-date">18 Feb 2017</span>
 
-    <p>Bytes Club is an open source community by the students of WBUT In-House.</p>
+    <!--<p>Bytes Club is an open source community by the students of WBUT In-House.</p>
 
 <h3 id="contributing">Contributing</h3>
 
@@ -379,7 +422,7 @@ SSH provides a secure channel over an unsecured network in a client-server archi
   <li>Mailing List- <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;">&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;</a></li>
   <li><a href="https://www.facebook.com/groups/718359538212066/">Facebook Group</a>, if you are a student of WBUT In-House</li>
 </ul>
-
+-->
   </div>
   
 </div>
@@ -392,6 +435,7 @@ SSH provides a secure channel over an unsecured network in a client-server archi
     <span class="pagination-item newer">Newer</span>
   
 </div>
+
     </div>
 
   </body>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>BytesClub</title>
- <link href="https://github.com/BytesClub/atom.xml" rel="self"/>
- <link href="https://github.com/BytesClub/"/>
- <updated>2017-03-01T20:10:29+05:30</updated>
- <id>https://github.com/BytesClub</id>
+ <link href="https://bytesclub.github.io//atom.xml" rel="self"/>
+ <link href="https://bytesclub.github.io//"/>
+ <updated>2017-05-13T17:41:19+05:30</updated>
+ <id>https://bytesclub.github.io/</id>
  <author>
    <name>Bytes CLub</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>SSH and it's use in GitHub</title>
-   <link href="https://github.com/BytesClub/2017/03/01/introduction-to-ssh/"/>
+   <link href="https://bytesclub.github.io//2017/03/01/introduction-to-ssh/"/>
    <updated>2017-03-01T00:00:00+05:30</updated>
-   <id>https://github.com/BytesClub/2017/03/01/introduction-to-ssh</id>
+   <id>https://bytesclub.github.io//2017/03/01/introduction-to-ssh</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;“Privacy is Security, Security is Victory”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -74,9 +74,9 @@ SSH provides a secure channel over an unsecured network in a client-server archi
  
  <entry>
    <title>Introduction to Git and GitHub</title>
-   <link href="https://github.com/BytesClub/2017/02/23/introduction-to-git/"/>
+   <link href="https://bytesclub.github.io//2017/02/23/introduction-to-git/"/>
    <updated>2017-02-23T00:00:00+05:30</updated>
-   <id>https://github.com/BytesClub/2017/02/23/introduction-to-git</id>
+   <id>https://bytesclub.github.io//2017/02/23/introduction-to-git</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;“Real men use the command line”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -204,6 +204,39 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;h3 id=&quot;head&quot;&gt;HEAD&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;HEAD&lt;/code&gt; is a reference to the last commit in the currently checked out branch. &lt;sup id=&quot;fnref:head&quot;&gt;&lt;a href=&quot;#fn:head&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;diffs&quot;&gt;Diffs&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt; shows changes between commits, commit and working directory, etc.
+To see the uncommitted changes made, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For showing the changes made in the last &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; (let it be 3 here) commits &lt;sup id=&quot;fnref:diff_commit&quot;&gt;&lt;a href=&quot;#fn:diff_commit&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff HEAD~3..HEAD
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;By default, &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt; only splits out three lines of context above and below the changes. &lt;sup id=&quot;fnref:diff_full&quot;&gt;&lt;a href=&quot;#fn:diff_full&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&quot;fnref:diff_full_2&quot;&gt;&lt;a href=&quot;#fn:diff_full_2&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; To view the entire file, we use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff --no-prefix -U1000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To save the diff in a file, use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff &amp;gt; patch.diff
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;View &lt;a href=&quot;https://git-scm.com/docs/git-diff&quot;&gt;the documentations&lt;/a&gt; for more.&lt;/p&gt;
+
 &lt;h3 id=&quot;git-structure&quot;&gt;Git Structure&lt;/h3&gt;
 
 &lt;p&gt;The very basic structure of git looks like the following:&lt;/p&gt;
@@ -230,6 +263,8 @@ SSH provides a secure channel over an unsecured network in a client-server archi
 
 &lt;p&gt;Forking a repository means you have a copy of one repository on your own profile. You will have write access to your forked repository. Push the changes to the forked repository as a remote.&lt;/p&gt;
 
+&lt;p&gt;Protip: Do not fork a repository unless you are going to contribute to it&lt;/p&gt;
+
 &lt;h3 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h3&gt;
 
 &lt;p&gt;To get the original repositories check out your contributions to their project, you need to create a Pull Request. Create a Pull Request to the original repository, describing the changes you have made. The maintainers of the project will review it, and if they are satisfied with the changes, they will merge the Pull Request, and your code will be reflected on the original project.&lt;/p&gt;
@@ -242,6 +277,18 @@ SSH provides a secure channel over an unsecured network in a client-server archi
     &lt;li id=&quot;fn:remote&quot;&gt;
       &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/5617211/what-is-git-remote-add-and-git-push-origin-master/5617350#5617350&quot;&gt;What is &lt;code class=&quot;highlighter-rouge&quot;&gt;git add remote&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git push origin master&lt;/code&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:remote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
+    &lt;li id=&quot;fn:head&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2529971/what-is-the-head-in-git&quot;&gt;What is the HEAD in git?&lt;/a&gt; &lt;a href=&quot;#fnref:head&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:diff_commit&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2217452/in-git-how-do-i-create-a-single-patch-for-the-last-2-revisions&quot;&gt;create a patch for the last 2 revisions.&lt;/a&gt; &lt;a href=&quot;#fnref:diff_commit&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:diff_full&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://trillworks.com/nick/2013/06/26/git-diff-with-full-context/&quot;&gt;git diff with full context&lt;/a&gt; &lt;a href=&quot;#fnref:diff_full&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:diff_full_2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/13627598/how-to-get-git-diff-with-full-context&quot;&gt;git diff with full context&lt;/a&gt; &lt;a href=&quot;#fnref:diff_full_2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </content>
@@ -249,9 +296,9 @@ SSH provides a secure channel over an unsecured network in a client-server archi
  
  <entry>
    <title>Bytes Club</title>
-   <link href="https://github.com/BytesClub/2017/02/18/introducing-bytesclub/"/>
+   <link href="https://bytesclub.github.io//2017/02/18/introducing-bytesclub/"/>
    <updated>2017-02-18T00:00:00+05:30</updated>
-   <id>https://github.com/BytesClub/2017/02/18/introducing-bytesclub</id>
+   <id>https://bytesclub.github.io//2017/02/18/introducing-bytesclub</id>
    <content type="html">&lt;p&gt;Bytes Club is an open source community by the students of WBUT In-House.&lt;/p&gt;
 
 &lt;h3 id=&quot;contributing&quot;&gt;Contributing&lt;/h3&gt;

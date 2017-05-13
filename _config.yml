@@ -11,7 +11,7 @@ permalink:        pretty
 title:            BytesClub
 tagline:          Coding Club, WBUT In-House
 description:      "An open source community for WBUT In-House Students"
-url:              https://github.com/BytesClub
+url:              https://bytesclub.github.io/
 baseurl:          /
 
 author:
@@ -26,3 +26,26 @@ version:          1.0.1
 
 github:
   repo:           https://github.com/BytesClub
+
+#Global vars
+asset-img-path: /img/assets/
+asset-path: /assets/
+asset-download-path: /downloads/assets/
+
+defaults:
+  - scope:
+      path: "_assets"
+      type: assets
+    values:
+      layout: asset-view
+      banner-img: Banner.jpg
+      two-thirds-img: TwoThirds.jpg
+      one-third-img: OneThird.jpg
+      priority: 10
+      show: true
+      file-type: .zip
+
+collections:
+  assets:
+    output: true
+    permalink: /:collection/:title/
