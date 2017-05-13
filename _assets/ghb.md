@@ -15,7 +15,7 @@ documentation: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.
 [![Pull Request](https://img.shields.io/github/issues-pr/BytesClub/ghb.svg)](https://github.com/BytesClub/ghb/pulls)
 [![Releases](https://img.shields.io/github/release/BytesClub/ghb.svg)](https://github.com/BytesClub/ghb/releases)
 install: https://www.npmjs.com/package/ghb
-banner: Banner.png
+banner: ghb.png
 screenshots: Screenshot.png
 ---
 
