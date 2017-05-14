@@ -9,6 +9,7 @@ technology: Node.js, npm
 platform: Linux/Windows
 documentation: 
 install: 
+json: ghb
 banner: Banner.png
 ---
 

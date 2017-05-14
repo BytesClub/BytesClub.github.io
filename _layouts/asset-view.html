@@ -44,6 +44,28 @@ style:
 <p>{{page.maintainer_desc}}<br><a href="https://github.com/{{ page.maintainer_github }}" target="_blank">Github</a></p>
 </div>
 
+<br><br><br><br><br><br><br><br>
+
+<h1>Contributors</h1>
+
+<p align="center">
+{% for contributors in site.data.[page.json] %}
+<div  style="display: inline; float: left; padding: 08px; text-align:center;">
+  <a href="https://github.com/{{ contributors.login }}" target="_blank">
+  <img id = "avatar" src="https://avatars.githubusercontent.com/{{ contributors.login }}" width="100" height="100">
+  <p>@{{ contributors.login }} ({{ contributors.contributions }})</p>
+  </a>
+</div>
+<!--<p>{{ contributors.login }}</p>-->
+{% endfor %}
+</p>
+
+<p>
+{% for member in site.data.ttt %}
+  Hello
+{% endfor %}
+</p>
+
 <style>
 	#content {
 		max-width: 967px;

@@ -10,6 +10,7 @@ platform: Linux
 documentation: 
 install: 
 banner: Banner.jpg
+json: xplode
 screenshots:
 ---
 

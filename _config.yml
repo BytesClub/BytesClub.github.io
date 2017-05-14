@@ -49,3 +49,8 @@ collections:
   assets:
     output: true
     permalink: /:collection/:title/
+
+jekyll_get:
+  data: ttt
+  json: 'https://api.github.com/repos/BytesClub/Tic_Tac_Toe/contributors'
+  cache: true
