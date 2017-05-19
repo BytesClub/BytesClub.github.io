@@ -6,7 +6,7 @@ maintainer: Progyan Bhattacharya
 maintainer_github: Progyan1997
 maintainer_desc: 2nd year Undergrad; Web developer, Programmer and Open Source Contributor
 technology: Node.js, npm
-platform: Linux/Windows
+platform: Linux/Mac/Windows
 documentation: 
 install: 
 json: ghb
