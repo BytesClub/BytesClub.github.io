@@ -264,3 +264,23 @@ You can also check what Git thinks a specific key’s value is by typing `git co
 $ git config user.name
 John Doe
 ```
+
+### 1.7 Getting Started - Getting Help
+#### Getting Help
+
+If you ever need help while using Git, there are three ways to get the manual page (manpage) help for any of the Git commands:
+```
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+```
+For example, you can get the manpage help for the config command by running
+```
+$ git help config
+```
+These commands are nice because you can access them anywhere, even offline. If the manpages and this book aren’t enough and you need in-person help, you can try the `#git` or `#github` channel on the Freenode IRC server (irc.freenode.net). These channels are regularly filled with hundreds of people who are all very knowledgeable about Git and are often willing to help.
+
+### 1.8 Getting Started - Summary
+#### Summary
+
+You should have a basic understanding of what Git is and how it’s different from the centralized version control system you may have previously been using. You should also now have a working version of Git on your system that’s set up with your personal identity. It’s now time to learn some Git basics.
