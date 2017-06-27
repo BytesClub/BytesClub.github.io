@@ -141,7 +141,7 @@ If you’re on a Debian-based distribution like Ubuntu, try apt-get:
 ```
 $ sudo apt-get install git-all
 ```
-  For more options, there are instructions for installing on several different Unix flavors on the Git website, at [http://git-scm.com/download/linux(http://git-scm.com/download/linux).
+  For more options, there are instructions for installing on several different Unix flavors on the Git website, at [http://git-scm.com/download/linux](http://git-scm.com/download/linux).
 ##### Installing on Mac
 
 There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time. If you don’t have it installed already, it will prompt you to install it.
@@ -240,9 +240,9 @@ On a x64 system
 ```
 $ git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession"
 ```
-> Note Vim, Emacs and Notepad++ are popular text editors often used by developers on Unix based systems like Linux and OS X or a Windows system. If you are not familiar with these editors, you may need to search for specific instructions for how to set up your favorite editor with Git.
+> Note: Vim, Emacs and Notepad++ are popular text editors often used by developers on Unix based systems like Linux and OS X or a Windows system. If you are not familiar with these editors, you may need to search for specific instructions for how to set up your favorite editor with Git.
 
-> Warning You may find, if you don’t setup your editor like this, you get into a really confusing state when Git attempts to launch it. An example on a Windows system may include a prematurely terminated Git operation during a Git initiated edit.
+> Warning: You may find, if you don’t setup your editor like this, you get into a really confusing state when Git attempts to launch it. An example on a Windows system may include a prematurely terminated Git operation during a Git initiated edit.
 
 ##### Checking Your Settings
 
