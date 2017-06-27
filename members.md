@@ -3,6 +3,10 @@ layout: page
 title: Members
 ---
 
+### Alumni
+
+* [Ayan Chandra](https://github.com/ayanc18)
+
 ### Fourth Year Undergraduate
 * [Chinmay Rakshit](https://github.com/deathcod)
 
