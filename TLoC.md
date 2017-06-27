@@ -57,7 +57,7 @@ A 2D Game based on OpenGL
 
 ### How to apply
 
-Submit your proposal in a Google Doc format to the [BytesClub mailing list](mailto:bytes-club@googlegroups.com). Make sure you provide permission for mentors to feedbacks. A sample template can be found [here]()
+Submit your proposal in a Google Doc format to the [BytesClub mailing list](mailto:bytes-club@googlegroups.com). Make sure you provide permission for mentors to feedbacks. A sample template can be found [here](https://github.com/BytesClub/Guidelines/wiki/Thousand-Lines-of-Code:-Application-Template)
 
 ### Prizes
 
