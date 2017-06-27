@@ -3,6 +3,8 @@ layout: page
 title: Thousand Lines of Code
 ---
 
+![logo](/images/tloc.png)
+
 Thousand Lines of Code (TLoC) is a open source program initiated by Bytes Club to bring more students into open source development. Students will have to work under their mentors on one or more project for a span of 3 months during their semester breaks
 
 ### Timeline
