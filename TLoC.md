@@ -17,11 +17,20 @@ Thousand Lines of Code (TLoC) is a open source program initiated by Bytes Club t
 
 ### Available Projects
 
+---
+
 #### [Chalk](https://github.com/BytesClub/chalk)
 A command line text editor written in C
 
+**Brief Explanation**: Currently chalk is in a very early stage of development. The idea of this project is to complete the basic version 1.0 of chalk along with it's documentation: <br>
+* Accepting input from the user and producing the output <br>
+* Ability to view and edit the contents of a file effectively <br>
+* Searching <br>
+* Syntax highlighting<br>
+* Documentation of the overall project, using [Sphinx](http://www.sphinx-doc.org/en/stable/) <br>
 **Technologies**: C, CLI<br/>
-**Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)
+**Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)<br>
+**Communication**: [BytesClub/General](https://gitter.im/Bytes_Club/General) on Gitter
 
 ---
 
@@ -53,13 +62,15 @@ A simple Tic_Tac_Toe implementation in C
 A 2D Game based on OpenGL 
 
 **Technologies**: C++, OpenGL<br>
-**Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)
+**Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)<br>
+**Communication**: [BytesClub/General](https://gitter.im/Bytes_Club/General) on Gitter
 
 ---
 
 ### How to apply
 
 Submit your proposal in a Google Doc format to the [BytesClub mailing list](mailto:bytes-club@googlegroups.com). Make sure you provide permission for mentors to feedbacks. A sample template can be found [here](https://github.com/BytesClub/Guidelines/wiki/Thousand-Lines-of-Code:-Application-Template)
+
 #### Things to keep in mind:
 1. Do not set impossible goal. We are trying to do some real work here. So be as practical as possible.
 2. Participants can either work on issues registered already or on their independent ideas. In any case, there will be fixed boundary to which he/she can work on decided by the mentor.
