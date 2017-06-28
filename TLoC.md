@@ -74,6 +74,8 @@ A 2D Game based on OpenGL
 Submit your proposal in a Google Doc format to the [BytesClub mailing list](mailto:bytes-club@googlegroups.com). Make sure you provide permission for mentors to feedbacks. A sample template can be found [here](https://github.com/BytesClub/Guidelines/wiki/Thousand-Lines-of-Code:-Application-Template)
 
 #### Things to keep in mind:
+
+0. Make sure you join the Bytes Club [Mailing list](https://groups.google.com/forum/#!forum/bytes-club) and [Gitter Channel](https://gitter.im/Bytes_Club/General). All conversation will take place there.
 1. Do not set impossible goal. We are trying to do some real work here. So be as practical as possible.
 2. Participants can either work on issues registered already or on their independent ideas. In any case, there will be fixed boundary to which he/she can work on decided by the mentor.
 3. Introduce yourself properly mentioning your knowledge and experience properly, remember we will guide you likewise.
@@ -82,6 +84,7 @@ Submit your proposal in a Google Doc format to the [BytesClub mailing list](mail
 6. Communication is an important part of collaborative work. So try to be active as much as possible on our [gitter channel](https://gitter.im/Bytes_Club/General).
 7. We will review work progress and our goals in every week or so, according your mentor.
 8. The timeline is fixed and we are strict about our [Contribution Guidelines](/contributing/).
+9. Make sure you have some prior contributions to the projects you are planning to contribute during this period, it will be easier for you to get selected if you have prior knowledge about the codebase.
 
 ### Prizes
 
