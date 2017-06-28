@@ -28,6 +28,8 @@ A command line text editor written in C
 * Searching <br>
 * Syntax highlighting<br>
 * Documentation of the overall project, using [Sphinx](http://www.sphinx-doc.org/en/stable/) <br>
+
+
 **Technologies**: C, CLI<br/>
 **Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)<br>
 **Communication**: [BytesClub/General](https://gitter.im/Bytes_Club/General) on Gitter
