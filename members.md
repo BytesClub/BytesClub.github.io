@@ -5,7 +5,7 @@ title: Members
 
 ### Alumni
 
-* [Ayan Chandra](https://github.com/ayanc18)
+* [Ayan Chandra](https://ayanc18.github.io/)
 
 ### Fourth Year Undergraduate
 * [Chinmay Rakshit](https://github.com/deathcod)
