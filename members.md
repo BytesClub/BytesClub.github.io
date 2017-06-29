@@ -3,12 +3,19 @@ layout: page
 title: Members
 ---
 
+### Alumni
+
+* [Ayan Chandra](https://ayanc18.github.io/)
+
+### Fourth Year Undergraduate
+* [Chinmay Rakshit](https://github.com/deathcod)
+
 ### Third Year Undergraduate
 * [Rudra Nil Basu](http://rudranilbasu.github.io/)
 * [Amit Tiwary](https://github.com/amitiwary999)
 
 ### Second Year Undergraduate
-* [Progyan Bhattacharya](https://www.linkedin.com/in/progyan-bhattacharya/)
+* [Progyan Bhattacharya](http://www.codeprogyan.me)
 * [Biswajit Kundu](https://www.facebook.com/biswajit.kundu.29)
 
 <!--
@@ -21,5 +28,5 @@ title: Members
 ### Second Year Undergraduate
 
 ![mem 3](/images/members/pg.png)
-[Progyan Bhattacharya](https://www.linkedin.com/in/progyan-bhattacharya/)
+[Progyan Bhattacharya](http://codeprogyan.me/)
 -->

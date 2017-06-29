@@ -15,7 +15,7 @@ If you wish to add a repository in the organisation, write about the project det
 
 ##### Creating issues
 * If you find any issues/feature enhancement regarding any project, go to the issues tab and create an issue regarding it.
-* Provide proper labels for the issue. If it is an enhancement use the `enhancement` label, if it is a bug, use the `bug` label.
+
 
 ##### Solving an issue
 * Go to the issues tab, and look for the issues which interests you. If you are a beginner, look for the label `dificulty/easy` to start with.
@@ -34,6 +34,26 @@ shortlog: commit message
 commit body
 
 fixes #<issue_number>
+
+Signed-off-by: [Your name] <your email>
 ```
 
+Keep in mind the following points while writting a commit message
+
+    - Separate subject from body with a blank line
+    - Limit the subject line to 50 characters
+    - Capitalize the subject line
+    - Do not end the subject line with a period
+    - Use the imperative mood in the subject line
+    - Wrap the body at 72 characters
+    - Use the body to explain what and why vs. how
+
 For more information about proper commit messages, read [this](https://chris.beams.io/posts/git-commit/).
+
+### Coding Conventions
+
+We follow [the Linux Kernel's coding convention]({{ site.baseurl }}docs/coding_style.pdf).
+
+-----
+
+More about git [here](/docs/git.pptx)

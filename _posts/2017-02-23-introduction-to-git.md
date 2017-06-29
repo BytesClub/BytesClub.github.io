@@ -129,6 +129,39 @@ If you want to send the changes (commits) made on the `master` branch on the rem
 git push origin master
 ```
 
+### HEAD
+
+`HEAD` is a reference to the last commit in the currently checked out branch. [^head]
+
+### Diffs
+
+`git diff` shows changes between commits, commit and working directory, etc.
+To see the uncommitted changes made, use:
+
+```
+git diff
+```
+
+For showing the changes made in the last `x` (let it be 3 here) commits [^diff_commit], use:
+
+```
+git diff HEAD~3..HEAD
+```
+
+By default, `git diff` only splits out three lines of context above and below the changes. [^diff_full] [^diff_full_2] To view the entire file, we use:
+
+```
+git diff --no-prefix -U1000
+```
+
+To save the diff in a file, use:
+
+```
+git diff > patch.diff
+```
+
+View [the documentations](https://git-scm.com/docs/git-diff) for more.
+
 ### Git Structure
 
 The very basic structure of git looks like the following:
@@ -153,10 +186,15 @@ You may not have the permission to write on `origin`, what then ?
 
 Forking a repository means you have a copy of one repository on your own profile. You will have write access to your forked repository. Push the changes to the forked repository as a remote.
 
+Protip: Do not fork a repository unless you are going to contribute to it
+
 ### Pull Requests
 
 To get the original repositories check out your contributions to their project, you need to create a Pull Request. Create a Pull Request to the original repository, describing the changes you have made. The maintainers of the project will review it, and if they are satisfied with the changes, they will merge the Pull Request, and your code will be reflected on the original project.
 
 [^ted]: [The mind behind Linux - Linus Torvalds](https://youtu.be/o8NPllzkFhE)
 [^remote]: [What is `git add remote` and `git push origin master`](http://stackoverflow.com/questions/5617211/what-is-git-remote-add-and-git-push-origin-master/5617350#5617350) 
-
+[^head]: [What is the HEAD in git?](http://stackoverflow.com/questions/2529971/what-is-the-head-in-git)
+[^diff_full]: [git diff with full context](https://trillworks.com/nick/2013/06/26/git-diff-with-full-context/)
+[^diff_commit]: [create a patch for the last 2 revisions.](http://stackoverflow.com/questions/2217452/in-git-how-do-i-create-a-single-patch-for-the-last-2-revisions)
+[^diff_full_2]: [git diff with full context](http://stackoverflow.com/questions/13627598/how-to-get-git-diff-with-full-context)
