@@ -51,6 +51,7 @@ A web application for MAKAUT students to get notified about lectures, events and
 
 #### [ServerX](https://github.com/BytesClub/serverX)
 A HTTP/HTTPS Web Server Handler by (C) Bytes Club
+
 **Brief Explanation**: The codebase of serverX is a clone of [CS50 Problem Set 5](http://cdn.cs50.net/2016/x/psets/6/pset6/pset6.html) with additional cross-platform dependency resolution. This project works in both Linux and Windows architecture. Key things about this projetc: <br/>
 * The code is completely written in C with few or more library dependencies.
 * We are using web socket to create network connections.
@@ -64,6 +65,7 @@ A HTTP/HTTPS Web Server Handler by (C) Bytes Club
 
 #### [Tic Tac Toe](https://github.com/BytesClub/Tic_Tac_Toe)
 A simple Tic_Tac_Toe implementation in C
+
 **Brief Explanation**: Tic Tac Toe is the biggest collaborative project on Bytes Club. This is a simple board game impleneted in C to run in terminal. The project currently has: <br/>
 * Static Credit screen followed by a Graphical representation of the board using ASCII characters.
 * Reload table after each moves given by user.
