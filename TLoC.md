@@ -23,12 +23,11 @@ Thousand Lines of Code (TLoC) is a open source program initiated by Bytes Club t
 A command line text editor written in C
 
 **Brief Explanation**: Currently chalk is in a very early stage of development. The idea of this project is to complete the basic version 1.0 of chalk along with it's documentation: <br>
-* Accepting input from the user and producing the output <br>
-* Ability to view and edit the contents of a file effectively <br>
-* Searching <br>
-* Syntax highlighting<br>
+* Accepting input from the user and producing the output 
+* Ability to view and edit the contents of a file effectively 
+* Searching 
+* Syntax highlighting
 * Documentation of the overall project, using [Sphinx](http://www.sphinx-doc.org/en/stable/) <br>
-
 
 **Technologies**: C, CLI<br/>
 **Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)<br>
@@ -39,6 +38,12 @@ A command line text editor written in C
 #### [MAKAUT Connect](https://github.com/BytesClub/MAKAUT-Connect)
 A web application for MAKAUT students to get notified about lectures, events and exams.
 
+**Brief Explanation**: The project MAKAUT Connect currently has just a sample HTML page, with header ang logo. The project is Component driven based on Virtual DOM concept of [React](https://facebook.github.io/react/). We will be using [Express](https://expressjs.com/) for our back-end. Key features of this projects: <br/>
+* Whole project is in NodeJS running in Chrome V8 engine.
+* Codebase will be wriiten in ES6 Standard following our [Coding Style](/docs/coding_style.pdf).
+* We will be using Redux for Web API request handling and React-Router for routing purpose.
+* For REST API service we will be using Express as framework MongoDB/MySQL as database. <br/>
+
 **Technologies**: NodeJS, React-Redux-Webpack, RESTful API<br/>
 **Maintainer**: [Progyan Bhattacharya](https://github.com/Progyan1997)
 
@@ -46,6 +51,11 @@ A web application for MAKAUT students to get notified about lectures, events and
 
 #### [ServerX](https://github.com/BytesClub/serverX)
 A HTTP/HTTPS Web Server Handler by (C) Bytes Club
+**Brief Explanation**: The codebase of serverX is a clone of [CS50 Problem Set 5](http://cdn.cs50.net/2016/x/psets/6/pset6/pset6.html) with additional cross-platform dependency resolution. This project works in both Linux and Windows architecture. Key things about this projetc: <br/>
+* The code is completely written in C with few or more library dependencies.
+* We are using web socket to create network connections.
+* The project currently is Single-Threaded, but will be Multi-Threaded soon.
+* The codebase currently rely on shell and interpreter for executing scripts. <br/>
 
 **Technologies**: C, HTTP, Socket.IO<br/>
 **Maintainer**: [Progyan Bhattacharya](https://github.com/Progyan1997)
@@ -54,6 +64,11 @@ A HTTP/HTTPS Web Server Handler by (C) Bytes Club
 
 #### [Tic Tac Toe](https://github.com/BytesClub/Tic_Tac_Toe)
 A simple Tic_Tac_Toe implementation in C
+**Brief Explanation**: Tic Tac Toe is the biggest collaborative project on Bytes Club. This is a simple board game impleneted in C to run in terminal. The project currently has: <br/>
+* Static Credit screen followed by a Graphical representation of the board using ASCII characters.
+* Reload table after each moves given by user.
+* Determines winner and avoids multiple input at same place.
+* Currently working on Bot player with/without AI capability. <br/>
 
 **Technologies**: C, CLI, AI<br/>
 **Maintainer**: [Progyan Bhattacharya](https://github.com/Progyan1997)
@@ -72,6 +87,13 @@ A 2D Game based on OpenGL
 ### How to apply
 
 Submit your proposal in a Google Doc format to the [BytesClub mailing list](mailto:bytes-club@googlegroups.com). Make sure you provide permission for mentors to feedbacks. A sample template can be found [here](https://github.com/BytesClub/Guidelines/wiki/Thousand-Lines-of-Code:-Application-Template)
+
+#### Pre-Requisite
+* **Hardware**: Any working computer with atleast pentium core processor and 512MiB RAM
+* **Operating System**: Any popular Linux distribution (Ubuntu 16.04 LTS is encouraged for new comers)
+* **Version Control System**: Git v2.x (recommended, v1.8.x will also work, but may require modifications)
+* **Tracker**: [GitHub in Terminal](https://www.npmjs.com/package/ghb) is Bytes Club's own [repo](https://github.com/BytesClub/ghb).
+* **Other**: An active [GitHub](https://github.com/) account and pre-requisites of particular projects available in Docs.
 
 #### Things to keep in mind:
 
