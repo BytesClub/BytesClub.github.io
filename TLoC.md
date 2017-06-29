@@ -73,6 +73,13 @@ A 2D Game based on OpenGL
 
 Submit your proposal in a Google Doc format to the [BytesClub mailing list](mailto:bytes-club@googlegroups.com). Make sure you provide permission for mentors to feedbacks. A sample template can be found [here](https://github.com/BytesClub/Guidelines/wiki/Thousand-Lines-of-Code:-Application-Template)
 
+#### Pre-Requisite
+* **Hardware**: Any working computer with atleast pentium core processor and 512MiB RAM
+* **Operating System**: Any popular linux distribution (Ubuntu 16.04 LTS is encouraged for new comers)
+* **Version Control System**: Git v2.x (recommended, v1.8.x will also work, but may require modifications)
+* **Tracker**: [GitHub in Terminal](https://www.npmjs.com/package/ghb) is Bytes Club's own [repo](https://github.com/BytesClub/ghb).
+* **Other**: An active [GitHub](https://github.com/) account and pre-requisites of particular projects available in Docs.
+
 #### Things to keep in mind:
 
 0. Make sure you join the Bytes Club [Mailing list](https://groups.google.com/forum/#!forum/bytes-club) and [Gitter Channel](https://gitter.im/Bytes_Club/General). All conversation will take place there.
