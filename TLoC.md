@@ -80,6 +80,11 @@ A simple Tic_Tac_Toe implementation in C
 #### [Xplode](https://github.com/BytesClub/Xplode)
 A 2D Game based on OpenGL 
 
+**Bried Explanation**: Xplode is currently in a very basic stage of development and we would like to complete the first version of Xplode which would include:
+* Fully functional gameplay
+* Main menu screen and credits screen
+* Documentation using Sphinx
+
 **Technologies**: C++, OpenGL<br>
 **Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)<br>
 **Communication**: [BytesClub/General](https://gitter.im/Bytes_Club/General) on Gitter
