@@ -148,7 +148,7 @@ There are several ways to install Git on a Mac. The easiest is probably to insta
 
 If you want a more up to date version, you can also install it via a binary installer. An OSX Git installer is maintained and available for download at the Git website, at http://git-scm.com/download/mac.
 Git OS X installer.
-[Figure 7. Git OS X Installer.](https://git-scm.com/book/en/v2/images/git-osx-installer.png)
+![Figure 7. Git OS X Installer.](https://git-scm.com/book/en/v2/images/git-osx-installer.png)
 
 You can also install it as part of the GitHub for Mac install. Their GUI Git tool has an option to install command line tools as well. You can download that tool from the GitHub for Mac website, at [http://mac.github.com](http://mac.github.com).
 ##### Installing on Windows
