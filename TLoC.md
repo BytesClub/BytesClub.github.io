@@ -38,7 +38,7 @@ A command line text editor written in C
 #### [MAKAUT Connect](https://github.com/BytesClub/MAKAUT-Connect)
 A web application for MAKAUT students to get notified about lectures, events and exams.
 
-**Brief Explanation**: The project MAKAUT Connect currently has just a sample HTML page, with header ang logo. The project is Component driven based on Virtual DOM concept of [React](https://facebook.github.io/react/). We will be using [Express](https://expressjs.com/) for our back-end. Key features of this projects: <br/>
+**Brief Explanation**: The project MAKAUT Connect currently has just a sample HTML page, with header and logo. The project is Component driven based on Virtual DOM concept of [React](https://facebook.github.io/react/). We will be using [Express](https://expressjs.com/) for our back-end. Key features of this project: <br/>
 * Whole project is in NodeJS running in Chrome V8 engine.
 * Codebase will be wriiten in ES6 Standard following our [Coding Style](/docs/coding_style.pdf).
 * We will be using Redux for Web API request handling and React-Router for routing purpose.
@@ -52,7 +52,7 @@ A web application for MAKAUT students to get notified about lectures, events and
 #### [ServerX](https://github.com/BytesClub/serverX)
 A HTTP/HTTPS Web Server Handler by (C) Bytes Club
 
-**Brief Explanation**: The codebase of serverX is a clone of [CS50 Problem Set 5](http://cdn.cs50.net/2016/x/psets/6/pset6/pset6.html) with additional cross-platform dependency resolution. This project works in both Linux and Windows architecture. Key things about this projetc: <br/>
+**Brief Explanation**: The codebase of serverX is a clone of [CS50 Problem Set 5](http://cdn.cs50.net/2016/x/psets/6/pset6/pset6.html) with additional cross-platform dependency resolution. This project works in both Linux and Windows architecture. Key things about this project: <br/>
 * The code is completely written in C with few or more library dependencies.
 * We are using web socket to create network connections.
 * The project currently is Single-Threaded, but will be Multi-Threaded soon.
