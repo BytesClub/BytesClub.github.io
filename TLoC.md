@@ -83,7 +83,7 @@ A 2D Game based on OpenGL
 **Bried Explanation**: Xplode is currently in a very basic stage of development and we would like to complete the first version of Xplode which would include:
 * Fully functional gameplay
 * Main menu screen and credits screen
-* Documentation using Sphinx
+* Documentation using [Sphinx](http://www.sphinx-doc.org/en/stable/)
 
 **Technologies**: C++, OpenGL<br>
 **Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)<br>
