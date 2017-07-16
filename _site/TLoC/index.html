@@ -136,36 +136,60 @@
 <p>A command line text editor written in C</p>
 
 <p><strong>Brief Explanation</strong>: Currently chalk is in a very early stage of development. The idea of this project is to complete the basic version 1.0 of chalk along with it’s documentation: <br />
-* Accepting input from the user and producing the output <br />
-* Ability to view and edit the contents of a file effectively <br />
-* Searching <br />
-* Syntax highlighting<br />
+* Accepting input from the user and producing the output 
+* Ability to view and edit the contents of a file effectively 
+* Searching 
+* Syntax highlighting
 * Documentation of the overall project, using <a href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> <br /></p>
 
 <p><strong>Technologies</strong>: C, CLI<br />
 <strong>Maintainer</strong>: <a href="https://github.com/RudraNilBasu">Rudra Nil Basu</a><br />
 <strong>Communication</strong>: <a href="https://gitter.im/Bytes_Club/General">BytesClub/General</a> on Gitter</p>
 
+<p><strong>Selected candidate</strong>: Satyam Kumar</p>
+
 <hr />
 
 <h4 id="makaut-connecthttpsgithubcombytesclubmakaut-connect"><a href="https://github.com/BytesClub/MAKAUT-Connect">MAKAUT Connect</a></h4>
 <p>A web application for MAKAUT students to get notified about lectures, events and exams.</p>
 
+<p><strong>Brief Explanation</strong>: The project MAKAUT Connect currently has just a sample HTML page, with header and logo. The project is Component driven based on Virtual DOM concept of <a href="https://facebook.github.io/react/">React</a>. We will be using <a href="https://expressjs.com/">Express</a> for our back-end. Key features of this project: <br />
+* Whole project is in NodeJS running in Chrome V8 engine.
+* Codebase will be wriiten in ES6 Standard following our <a href="/docs/coding_style.pdf">Coding Style</a>.
+* We will be using Redux for Web API request handling and React-Router for routing purpose.
+* For REST API service we will be using Express as framework MongoDB/MySQL as database. <br /></p>
+
 <p><strong>Technologies</strong>: NodeJS, React-Redux-Webpack, RESTful API<br />
 <strong>Maintainer</strong>: <a href="https://github.com/Progyan1997">Progyan Bhattacharya</a></p>
+
+<p><strong>Selected candidate</strong>: Supriyo Das</p>
 
 <hr />
 
 <h4 id="serverxhttpsgithubcombytesclubserverx"><a href="https://github.com/BytesClub/serverX">ServerX</a></h4>
 <p>A HTTP/HTTPS Web Server Handler by (C) Bytes Club</p>
 
+<p><strong>Brief Explanation</strong>: The codebase of serverX is a clone of <a href="http://cdn.cs50.net/2016/x/psets/6/pset6/pset6.html">CS50 Problem Set 5</a> with additional cross-platform dependency resolution. This project works in both Linux and Windows architecture. Key things about this project: <br />
+* The code is completely written in C with few or more library dependencies.
+* We are using web socket to create network connections.
+* The project currently is Single-Threaded, but will be Multi-Threaded soon.
+* The codebase currently rely on shell and interpreter for executing scripts. <br /></p>
+
 <p><strong>Technologies</strong>: C, HTTP, Socket.IO<br />
 <strong>Maintainer</strong>: <a href="https://github.com/Progyan1997">Progyan Bhattacharya</a></p>
+
+<p><strong>Selected candidate</strong>: Pinak Roy Chowdury</p>
 
 <hr />
 
 <h4 id="tic-tac-toehttpsgithubcombytesclubtictactoe"><a href="https://github.com/BytesClub/Tic_Tac_Toe">Tic Tac Toe</a></h4>
 <p>A simple Tic_Tac_Toe implementation in C</p>
+
+<p><strong>Brief Explanation</strong>: Tic Tac Toe is the biggest collaborative project on Bytes Club. This is a simple board game impleneted in C to run in terminal. The project currently has: <br />
+* Static Credit screen followed by a Graphical representation of the board using ASCII characters.
+* Reload table after each moves given by user.
+* Determines winner and avoids multiple input at same place.
+* Currently working on Bot player with/without AI capability. <br /></p>
 
 <p><strong>Technologies</strong>: C, CLI, AI<br />
 <strong>Maintainer</strong>: <a href="https://github.com/Progyan1997">Progyan Bhattacharya</a></p>
@@ -174,6 +198,11 @@
 
 <h4 id="xplodehttpsgithubcombytesclubxplode"><a href="https://github.com/BytesClub/Xplode">Xplode</a></h4>
 <p>A 2D Game based on OpenGL</p>
+
+<p><strong>Bried Explanation</strong>: Xplode is currently in a very basic stage of development and we would like to complete the first version of Xplode which would include:
+* Fully functional gameplay
+* Main menu screen and credits screen
+* Documentation using <a href="http://www.sphinx-doc.org/en/stable/">Sphinx</a></p>
 
 <p><strong>Technologies</strong>: C++, OpenGL<br />
 <strong>Maintainer</strong>: <a href="https://github.com/RudraNilBasu">Rudra Nil Basu</a><br />
@@ -184,6 +213,15 @@
 <h3 id="how-to-apply">How to apply</h3>
 
 <p>Submit your proposal in a Google Doc format to the <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;">BytesClub mailing list</a>. Make sure you provide permission for mentors to feedbacks. A sample template can be found <a href="https://github.com/BytesClub/Guidelines/wiki/Thousand-Lines-of-Code:-Application-Template">here</a></p>
+
+<h4 id="pre-requisite">Pre-Requisite</h4>
+<ul>
+  <li><strong>Hardware</strong>: Any working computer with atleast pentium core processor and 512MiB RAM</li>
+  <li><strong>Operating System</strong>: Any popular Linux distribution (Ubuntu 16.04 LTS is encouraged for new comers)</li>
+  <li><strong>Version Control System</strong>: Git v2.x (recommended, v1.8.x will also work, but may require modifications)</li>
+  <li><strong>Tracker</strong>: <a href="https://www.npmjs.com/package/ghb">GitHub in Terminal</a> is Bytes Club’s own <a href="https://github.com/BytesClub/ghb">repo</a>.</li>
+  <li><strong>Other</strong>: An active <a href="https://github.com/">GitHub</a> account and pre-requisites of particular projects available in Docs.</li>
+</ul>
 
 <h4 id="things-to-keep-in-mind">Things to keep in mind:</h4>
 

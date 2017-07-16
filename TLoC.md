@@ -33,6 +33,8 @@ A command line text editor written in C
 **Maintainer**: [Rudra Nil Basu](https://github.com/RudraNilBasu)<br>
 **Communication**: [BytesClub/General](https://gitter.im/Bytes_Club/General) on Gitter
 
+**Selected candidate**: Satyam Kumar
+
 ---
 
 #### [MAKAUT Connect](https://github.com/BytesClub/MAKAUT-Connect)
@@ -47,6 +49,8 @@ A web application for MAKAUT students to get notified about lectures, events and
 **Technologies**: NodeJS, React-Redux-Webpack, RESTful API<br/>
 **Maintainer**: [Progyan Bhattacharya](https://github.com/Progyan1997)
 
+**Selected candidate**: Supriyo Das
+
 ---
 
 #### [ServerX](https://github.com/BytesClub/serverX)
@@ -60,6 +64,8 @@ A HTTP/HTTPS Web Server Handler by (C) Bytes Club
 
 **Technologies**: C, HTTP, Socket.IO<br/>
 **Maintainer**: [Progyan Bhattacharya](https://github.com/Progyan1997)
+
+**Selected candidate**: Pinak Roy Chowdury
 
 ---
 
