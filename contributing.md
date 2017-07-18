@@ -3,6 +3,8 @@ layout: page
 title: Contribution
 ---
 
+If you are a beginner, please read [The Beginner's Guide](/2017/02/18/introducing-bytesclub/)
+
 ### Adding a repository
 
 If you wish to add a repository in the organisation, write about the project details at [bytes-club@googlegroups.com](mailto:bytes-club@googlegroups.com) or drop a message about the repository on the gitter channel [#Bytes_Club/General](https://gitter.im/Bytes_Club/General).
@@ -36,6 +38,12 @@ commit body
 fixes #<issue_number>
 
 Signed-off-by: [Your name] <your email>
+```
+
+where short log is the area/filename where you are making the change. Also, in order to avoid writting the signoff manually, add the `--signoff` flag while committing. Thus the full command should be:
+
+```
+git commit --signoff
 ```
 
 Keep in mind the following points while writting a commit message

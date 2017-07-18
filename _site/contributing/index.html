@@ -114,7 +114,9 @@
     <div class="content container">
       <div class="page">
   <h1 class="page-title">Contribution</h1>
-  <h3 id="adding-a-repository">Adding a repository</h3>
+  <p>If you are a beginner, please read <a href="/2017/02/18/introducing-bytesclub/">The Beginner’s Guide</a></p>
+
+<h3 id="adding-a-repository">Adding a repository</h3>
 
 <p>If you wish to add a repository in the organisation, write about the project details at <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;">&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;</a> or drop a message about the repository on the gitter channel <a href="https://gitter.im/Bytes_Club/General">#Bytes_Club/General</a>.</p>
 
@@ -153,6 +155,12 @@ commit body
 fixes #&lt;issue_number&gt;
 
 Signed-off-by: [Your name] &lt;your email&gt;
+</code></pre>
+</div>
+
+<p>where short log is the area/filename where you are making the change. Also, in order to avoid writting the signoff manually, add the <code class="highlighter-rouge">--signoff</code> flag while committing. Thus the full command should be:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit --signoff
 </code></pre>
 </div>
 
