@@ -4,7 +4,7 @@
  <title>BytesClub</title>
  <link href="https://bytesclub.github.io//atom.xml" rel="self"/>
  <link href="https://bytesclub.github.io//"/>
- <updated>2017-07-18T13:30:49+05:30</updated>
+ <updated>2017-10-04T17:48:58+05:30</updated>
  <id>https://bytesclub.github.io/</id>
  <author>
    <name>Bytes CLub</name>
@@ -306,9 +306,9 @@ To see the uncommitted changes made, use:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Use a Linux distribution. Though there are few projects which can be run on Windows, all our development process takes place in Linux environment. Because: reasons.&lt;/li&gt;
   &lt;li&gt;Make sure you have joined our mailing list. If not, then send a mail to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#098;&amp;#121;&amp;#116;&amp;#101;&amp;#115;&amp;#045;&amp;#099;&amp;#108;&amp;#117;&amp;#098;&amp;#064;&amp;#103;&amp;#111;&amp;#111;&amp;#103;&amp;#108;&amp;#101;&amp;#103;&amp;#114;&amp;#111;&amp;#117;&amp;#112;&amp;#115;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#098;&amp;#121;&amp;#116;&amp;#101;&amp;#115;&amp;#045;&amp;#099;&amp;#108;&amp;#117;&amp;#098;&amp;#064;&amp;#103;&amp;#111;&amp;#111;&amp;#103;&amp;#108;&amp;#101;&amp;#103;&amp;#114;&amp;#111;&amp;#117;&amp;#112;&amp;#115;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt; introducing yourself and we will send you an invitation to join our mailing list.&lt;/li&gt;
-  &lt;li&gt;Learn Git and Github.&lt;/li&gt;
+  &lt;li&gt;Learn Git.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Communication&lt;/strong&gt;: Feel free to contact us if you are facing any difficulties. However, make sure you have done a bit of research before asking the question. It is generally not adviced to ask something so trivial that can be found on the first link of a google search.&lt;/li&gt;
-  &lt;li&gt;Pre-requisites: Knowledge of at least one programming language&lt;/li&gt;
+  &lt;li&gt;Pre-requisites: Knowledge of at least one programming language, git and familiarity with github environment&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Make sure you follow our &lt;a href=&quot;/contributing&quot;&gt;Contributing guidelines&lt;/a&gt;.&lt;/p&gt;

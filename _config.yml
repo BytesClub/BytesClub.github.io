@@ -32,6 +32,10 @@ asset-img-path: /img/assets/
 asset-path: /assets/
 asset-download-path: /downloads/assets/
 
+#sass:
+#  sass_dir: css/_sass
+#  style: compressed
+
 defaults:
   - scope:
       path: "_assets"

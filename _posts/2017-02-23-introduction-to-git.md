@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introduction to Git and GitHub
+author: rudra
 ---
 
 > "Real men use the command line"

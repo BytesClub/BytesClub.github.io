@@ -11,7 +11,7 @@
 
   <title>
     
-      Introduction to Git and GitHub &middot; BytesClub
+      Blog &middot; BytesClub
     
   </title>
 
@@ -72,7 +72,7 @@
       
         
           
-            <a class="sidebar-nav-item" href="/blog/">Blog</a>
+            <a class="sidebar-nav-item active" href="/blog/">Blog</a>
           
         
       
@@ -119,10 +119,84 @@
 
 
     <div class="content container">
-      <div class="post">
-  <h1 class="post-title">Introduction to Git and GitHub</h1>
-  <span class="post-date">23 Feb 2017</span>
-  <blockquote>
+      <div class="page">
+  <h1 class="page-title">Blog</h1>
+  <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2017/03/01/introduction-to-ssh/">
+        SSH and it's use in GitHub
+      </a>
+    </h1>
+
+    <span class="post-date">01 Mar 2017 by pragyan</span>
+
+    <!--<blockquote>
+  <p>“Privacy is Security, Security is Victory”</p>
+</blockquote>
+
+<h1 id="what-is-ssh">What is SSH</h1>
+<p><strong>Secure Shell (SSH)</strong> is a <a href="https://en.wikipedia.org/wiki/Secure_Shell">cryptographic network protocol</a> for operating network services securely over an unsecured network.
+SSH provides a secure channel over an unsecured network in a client-server architecture, connecting an SSH client application with an SSH server. Common applications include remote command-line login and remote command execution, but any network service can be secured with SSH.</p>
+
+<h1 id="how-does-it-works">How does it works</h1>
+<p>To use a manually generated public-private key pair to perform the authentication, allowing users or programs to log in without having to specify a password. In this scenario, anyone can produce a matching pair of different keys (public and private). The public key is placed on all computers that must allow access to the owner of the matching private key (the owner keeps the private key secret). While authentication is based on the private key, the key itself is never transferred through the network during authentication. SSH only verifies whether the same person offering the public key also owns the matching private key. In all versions of SSH it is important to verify unknown public keys, i.e. associate the public keys with identities, before accepting them as valid. Accepting an attacker’s public key without validation will authorize an unauthorized attacker as a valid user.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ssh_binary_packet_alt.svg/250px-Ssh_binary_packet_alt.svg.png" alt="copy" /></p>
+
+<h1 id="how-to-use">How to use</h1>
+<ul>
+  <li>Linux has native support for SSH, while Windows doesn’t. <sup><a href="http://arstechnica.com/information-technology/2015/06/microsoft-bringing-ssh-to-windows-and-powershell/">Ref</a></sup></li>
+  <li>Git Bash by default contains SSH package.<sup><a href="https://git-for-windows.github.io/">Download</a></sup></li>
+  <li>Navigate to
+    <ul>
+      <li><code class="highlighter-rouge">user/.ssh/</code> in Windows</li>
+      <li><code class="highlighter-rouge">home/.ssh/</code> in Linux</li>
+    </ul>
+
+    <p>to list all the key-pair present in your machine. Only the file named <strong><code class="highlighter-rouge">id_rsa</code></strong> will be considered in <em>bash</em></p>
+  </li>
+  <li>Every key has a public counter-part, filename ending with <strong><code class="highlighter-rouge">.pub</code></strong>.</li>
+</ul>
+
+<h3 id="how-to-create-a-new-key">How to create a new key</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ ssh-keygen -t rsa -C "your_email@example.com"
+</code></pre>
+</div>
+<p>The file will be stored in afforesaid directory along with the fingerprint.
+<img src="https://confluence.atlassian.com/bitbucketserver/files/776639788/776639789/1/1386202193726/STASH_11_win_keygen_1.png" alt="copy" />
+<img src="https://confluence.atlassian.com/bitbucketserver/files/776639788/776639790/1/1386202193276/STASH_11_win_keygen_2.png" alt="copy" /></p>
+
+<h4 id="note-the-key-pair-will-create-effect-only-if-both-of-them-are-renamed-as-idrsa-and-idrsapub-respectively">Note: The key-pair will create effect only if both of them are renamed as <code class="highlighter-rouge">id_rsa</code> and <code class="highlighter-rouge">id_rsa.pub</code> respectively.</h4>
+
+<h3 id="how-to-deploy-keys-in-github">How to deploy keys in GitHub</h3>
+<ul>
+  <li>Copy the content of the file <strong>id_rsa.pub</strong></li>
+  <li>Move to the <strong>Settings</strong> option in right-top corner of the page</li>
+  <li>In the user settings sidebar, click <strong>SSH and GPG keys</strong>.</li>
+  <li>Click <strong>New SSH key</strong> or <strong>Add SSH key</strong>.</li>
+  <li>Specify the <strong>Title</strong> according to your machine/workspace and paste the content in <strong>Key</strong> field.</li>
+  <li>Click <strong>Add SSH key</strong>.</li>
+  <li>If prompted, confirm your GitHub password.</li>
+</ul>
+
+<h4 id="for-more-details-navigate-herehttpshelpgithubcomarticlesconnecting-to-github-with-ssh"><a href="https://help.github.com/articles/connecting-to-github-with-ssh/">For more details, navigate here</a></h4>
+
+<h3 id="happy-coding-">Happy Coding! :)</h3>
+-->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2017/02/23/introduction-to-git/">
+        Introduction to Git and GitHub
+      </a>
+    </h1>
+
+    <span class="post-date">23 Feb 2017 by rudra</span>
+
+    <!--<blockquote>
   <p>“Real men use the command line”</p>
 </blockquote>
 
@@ -336,32 +410,55 @@ To see the uncommitted changes made, use:</p>
     </li>
   </ol>
 </div>
+-->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2017/02/18/introducing-bytesclub/">
+        Bytes Club - A Beginner's Guide
+      </a>
+    </h1>
 
+    <span class="post-date">18 Feb 2017 by rudra</span>
+
+    <!--<p>Bytes Club is an open source community by the students of WBUT In-House.</p>
+
+<h3 id="a-beginners-guide">A Beginner’s Guide</h3>
+
+<ul>
+  <li>Use a Linux distribution. Though there are few projects which can be run on Windows, all our development process takes place in Linux environment. Because: reasons.</li>
+  <li>Make sure you have joined our mailing list. If not, then send a mail to <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;">&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;</a> introducing yourself and we will send you an invitation to join our mailing list.</li>
+  <li>Learn Git.</li>
+  <li><strong>Communication</strong>: Feel free to contact us if you are facing any difficulties. However, make sure you have done a bit of research before asking the question. It is generally not adviced to ask something so trivial that can be found on the first link of a google search.</li>
+  <li>Pre-requisites: Knowledge of at least one programming language, git and familiarity with github environment</li>
+</ul>
+
+<p>Make sure you follow our <a href="/contributing">Contributing guidelines</a>.</p>
+
+<h3 id="contact-us">Contact Us</h3>
+
+<p>Contact us on:</p>
+
+<ul>
+  <li><a href="https://gitter.im/Bytes_Club/General">#Bytes_Club/General</a> Gitter channel</li>
+  <li>Mailing List- <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;">&#098;&#121;&#116;&#101;&#115;&#045;&#099;&#108;&#117;&#098;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#103;&#114;&#111;&#117;&#112;&#115;&#046;&#099;&#111;&#109;</a></li>
+  <li><a href="https://www.facebook.com/groups/718359538212066/">Facebook Group</a>, if you are a student of WBUT In-House</li>
+</ul>
+-->
+  </div>
+  
 </div>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2017/03/01/introduction-to-ssh/">
-            SSH and it's use in GitHub
-            <small>01 Mar 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2017/02/18/introducing-bytesclub/">
-            Bytes Club - A Beginner's Guide
-            <small>18 Feb 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
 </div>
 
     </div>

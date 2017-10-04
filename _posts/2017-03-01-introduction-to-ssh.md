@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SSH and it's use in GitHub
+author: pragyan
 ---
 
 > "Privacy is Security, Security is Victory"

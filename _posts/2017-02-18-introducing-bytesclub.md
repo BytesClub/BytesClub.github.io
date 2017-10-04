@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bytes Club - A Beginner's Guide
+author: rudra
 ---
 
 Bytes Club is an open source community by the students of WBUT In-House.
