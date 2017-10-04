@@ -9,7 +9,7 @@ title: About
 
 ## Bytes Club
 
-![logo]({{ site.baseurl }}images/bytes_club_logo.jpg)
+![logo]({{ site.baseurl }}/images/bytes_club_logo_home.jpg)
 <!--![logo](/images/bytes_club_logo.jpg)-->
 
 Bytes Club is an open source community by the students of WBUT In-House.
@@ -30,4 +30,4 @@ Contact us on:
 
 To donate to Bytes Club, use this:
 
-![img]({{ site.baseurl }}images/fund.png)
+![img]({{ site.baseurl }}/images/fund.png)
