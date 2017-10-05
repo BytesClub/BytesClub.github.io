@@ -48,11 +48,18 @@ defaults:
       priority: 10
       show: true
       file-type: .zip
+  - scope: 
+      path: "_people"
+      type: people
+    values: 
+      layout: member-view
 
 collections:
   assets:
     output: true
     permalink: /:collection/:title/
+  people:
+    output: true
 
 jekyll_get:
   data: ttt

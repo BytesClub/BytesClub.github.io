@@ -11,6 +11,8 @@ Bytes Club is an open source community by the students of WBUT In-House.
 * Use a Linux distribution. Though there are few projects which can be run on Windows, all our development process takes place in Linux environment. Because: reasons.
 * Make sure you have joined our mailing list. If not, then send a mail to [bytes-club@googlegroups.com](mailto:bytes-club@googlegroups.com) introducing yourself and we will send you an invitation to join our mailing list.
 * Learn Git.
+
+  > Protip: Git != Github
 * **Communication**: Feel free to contact us if you are facing any difficulties. However, make sure you have done a bit of research before asking the question. It is generally not adviced to ask something so trivial that can be found on the first link of a google search.
 * Pre-requisites: Knowledge of at least one programming language, git and familiarity with github environment
 

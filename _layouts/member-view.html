@@ -1,0 +1,14 @@
+---
+layout: default
+
+style:
+  member-view
+---
+
+{% assign img-folder = page.title | remove: " -" | replace: " ", "-" | downcase %}
+{% assign img-path = site.asset-img-path | append: img-folder %}
+
+<h1>{{ page.name }}</h1>
+<h3>{{ page.nickname }}</h3>
+
+<p>{{ page.content }}</p>
