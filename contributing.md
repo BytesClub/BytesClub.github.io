@@ -63,7 +63,7 @@ For more information about proper commit messages, read [this](https://chris.bea
 
 ### Coding Conventions
 
-We follow [the Linux Kernel's coding convention]({{ site.baseurl }}docs/coding_style.pdf).
+We follow [the Linux Kernel's coding convention]({{ site.baseurl }}/docs/coding_style.pdf).
 
 -----
 
