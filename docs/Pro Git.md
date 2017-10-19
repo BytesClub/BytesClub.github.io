@@ -7,11 +7,13 @@ Written by Scott Chacon and Ben Straub and published by Apress, is available her
 ### 1.1 Getting Started - About Version Control
 
 This chapter will be about getting started with Git. We will begin by explaining some background on version control tools, then move on to how to get Git running on your system and finally how to get it set up to start working with. At the end of this chapter you should understand why Git is around, why you should use it and you should be all set up to do so.
+
 #### About Version Control
 
 What is "version control", and why should you care? Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. For the examples in this book you will use software source code as the files being version controlled, though in reality you can do this with nearly any type of file on a computer.
 
 If you are a graphic or web designer and want to keep every version of an image or layout (which you would most certainly want to), a Version Control System (VCS) is a very wise thing to use. It allows you to revert files back to a previous state, revert the entire project back to a previous state, compare changes over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also generally means that if you screw things up or lose files, you can easily recover. In addition, you get all this for very little overhead.
+
 ##### Local Version Control Systems
 
 Many people’s version-control method of choice is to copy files into another directory (perhaps a time-stamped directory, if they’re clever). This approach is very common because it is so simple, but it is also incredibly error prone. It is easy to forget which directory you’re in and accidentally write to the wrong file or copy over files you don’t mean to.
@@ -21,6 +23,7 @@ Local version control diagram
 ![Figure 1. Local version control.](https://git-scm.com/book/en/v2/images/local.png)
 
 One of the more popular VCS tools was a system called RCS, which is still distributed with many computers today. Even the popular Mac OS X operating system includes the rcs command when you install the Developer Tools. RCS works by keeping patch sets (that is, the differences between files) in a special format on disk; it can then re-create what any file looked like at any point in time by adding up all the patches.
+
 ##### Centralized Version Control Systems
 
 The next major issue that people encounter is that they need to collaborate with developers on other systems. To deal with this problem, Centralized Version Control Systems (CVCSs) were developed. These systems, such as CVS, Subversion, and Perforce, have a single server that contains all the versioned files, and a number of clients that check out files from that central place. For many years, this has been the standard for version control.
@@ -30,6 +33,7 @@ Centralized version control diagram
 This setup offers many advantages, especially over local VCSs. For example, everyone knows to a certain degree what everyone else on the project is doing. Administrators have fine-grained control over who can do what; and it’s far easier to administer a CVCS than it is to deal with local databases on every client.
 
 However, this setup also has some serious downsides. The most obvious is the single point of failure that the centralized server represents. If that server goes down for an hour, then during that hour nobody can collaborate at all or save versioned changes to anything they’re working on. If the hard disk the central database is on becomes corrupted, and proper backups haven’t been kept, you lose absolutely everything – the entire history of the project except whatever single snapshots people happen to have on their local machines. Local VCS systems suffer from this same problem – whenever you have the entire history of the project in a single place, you risk losing everything.
+
 ##### Distributed Version Control Systems
 
 This is where Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), clients don’t just check out the latest snapshot of the files: they fully mirror the repository. Thus if any server dies, and these systems were collaborating via it, any of the client repositories can be copied back up to the server to restore it. Every clone is really a full backup of all the data.
@@ -57,12 +61,13 @@ In 2005, the relationship between the community that developed the Linux kernel 
 
    * Able to handle large projects like the Linux kernel efficiently (speed and data size)
 
-Since its birth in 2005, Git has evolved and matured to be easy to use and yet retain these initial qualities. It’s incredibly fast, it’s very efficient with large projects, and it has an incredible branching system for non-linear development (See **Git Branching**).
+Since its birth in 2005, Git has evolved and matured to be easy to use and yet retain these initial qualities. It’s incredibly fast, it’s very efficient with large projects, and it has an incredible branching system for non-linear development (See [Git Branching](#)).
 
 ### 1.3 Getting Started - Git Basics
 #### Git Basics
 
 So, what is Git in a nutshell? This is an important section to absorb, because if you understand what Git is and the fundamentals of how it works, then using Git effectively will probably be much easier for you. As you learn Git, try to clear your mind of the things you may know about other VCSs, such as Subversion and Perforce; doing so will help you avoid subtle confusion when using the tool. Git stores and thinks about information much differently than these other systems, even though the user interface is fairly similar, and understanding those differences will help prevent you from becoming confused while using it.
+
 ##### Snapshots, Not Differences
 
 The major difference between Git and any other VCS (Subversion and friends included) is the way Git thinks about its data. Conceptually, most other systems store information as a list of file-based changes. These systems (CVS, Subversion, Perforce, Bazaar, and so on) think of the information they keep as a set of files and the changes made to each file over time.
@@ -73,7 +78,8 @@ Git doesn’t think of or store its data this way. Instead, Git thinks of its da
 Git stores data as snapshots of the project over time.
 ![Figure 5. Storing data as snapshots of the project over time.](https://git-scm.com/book/en/v2/images/snapshots.png)
 
-This is an important distinction between Git and nearly all other VCSs. It makes Git reconsider almost every aspect of version control that most other systems copied from the previous generation. This makes Git more like a mini filesystem with some incredibly powerful tools built on top of it, rather than simply a VCS. We’ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in **Git Branching**.
+This is an important distinction between Git and nearly all other VCSs. It makes Git reconsider almost every aspect of version control that most other systems copied from the previous generation. This makes Git more like a mini filesystem with some incredibly powerful tools built on top of it, rather than simply a VCS. We’ll explore some of the benefits you gain by thinking of your data this way when we cover Git branching in [Git Branching](#).
+
 ##### Nearly Every Operation Is Local
 
 Most operations in Git only need local files and resources to operate – generally no information is needed from another computer on your network. If you’re used to a CVCS where most operations have that network latency overhead, this aspect of Git will make you think that the gods of speed have blessed Git with unworldly powers. Because you have the entire history of the project right there on your local disk, most operations seem almost instantaneous.
@@ -81,6 +87,7 @@ Most operations in Git only need local files and resources to operate – genera
 For example, to browse the history of the project, Git doesn’t need to go out to the server to get the history and display it for you – it simply reads it directly from your local database. This means you see the project history almost instantly. If you want to see the changes introduced between the current version of a file and the file a month ago, Git can look up the file a month ago and do a local difference calculation, instead of having to either ask a remote server to do it or pull an older version of the file from the remote server to do it locally.
 
 This also means that there is very little you can’t do if you’re offline or off VPN. If you get on an airplane or a train and want to do a little work, you can commit happily until you get to a network connection to upload. If you go home and can’t get your VPN client working properly, you can still work. In many other systems, doing so is either impossible or painful. In Perforce, for example, you can’t do much when you aren’t connected to the server; and in Subversion and CVS, you can edit files, but you can’t commit changes to your database (because your database is offline). This may not seem like a huge deal, but you may be surprised what a big difference it can make.
+
 ##### Git Has Integrity
 
 Everything in Git is check-summed before it is stored and is then referred to by that checksum. This means it’s impossible to change the contents of any file or directory without Git knowing about it. This functionality is built into Git at the lowest levels and is integral to its philosophy. You can’t lose information in transit or get file corruption without Git being able to detect it.
@@ -90,11 +97,13 @@ The mechanism that Git uses for this checksumming is called a SHA-1 hash. This i
 24b9da6552252987aa493b52f8696cd6d3b00373
 ```
 You will see these hash values all over the place in Git because it uses them so much. In fact, Git stores everything in its database not by file name but by the hash value of its contents.
+
 ##### Git Generally Only Adds Data
 
 When you do actions in Git, nearly all of them only add data to the Git database. It is hard to get the system to do anything that is not undoable or to make it erase data in any way. As in any VCS, you can lose or mess up changes you haven’t committed yet; but after you commit a snapshot into Git, it is very difficult to lose, especially if you regularly push your database to another repository.
 
-This makes using Git a joy because we know we can experiment without the danger of severely screwing things up. For a more in-depth look at how Git stores its data and how you can recover data that seems lost, see **Undoing Things**.
+This makes using Git a joy because we know we can experiment without the danger of severely screwing things up. For a more in-depth look at how Git stores its data and how you can recover data that seems lost, see [Undoing Things](#24-git-basics---undoing-things).
+
 ##### The Three States
 
 Now, pay attention. This is the main thing to remember about Git if you want the rest of your learning process to go smoothly. Git has three main states that your files can reside in: committed, modified, and staged. Committed means that the data is safely stored in your local database. Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
@@ -115,7 +124,7 @@ The basic Git workflow goes something like this:
  2.   You stage the files, adding snapshots of them to your staging area.
  3.   You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
 
-If a particular version of a file is in the Git directory, it’s considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified. In **Git Basics**, you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.
+If a particular version of a file is in the Git directory, it’s considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified. In [Git Basics](#chapter-2--git-basics), you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.
 
 ### 1.4 Getting Started - The Command Line
 #### The Command Line
@@ -142,6 +151,7 @@ If you’re on a Debian-based distribution like Ubuntu, try apt-get:
 $ sudo apt-get install git-all
 ```
   For more options, there are instructions for installing on several different Unix flavors on the Git website, at [http://git-scm.com/download/linux](http://git-scm.com/download/linux).
+
 ##### Installing on Mac
 
 There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time. If you don’t have it installed already, it will prompt you to install it.
@@ -151,6 +161,7 @@ Git OS X installer.
 ![Figure 7. Git OS X Installer.](https://git-scm.com/book/en/v2/images/git-osx-installer.png)
 
 You can also install it as part of the GitHub for Mac install. Their GUI Git tool has an option to install command line tools as well. You can download that tool from the GitHub for Mac website, at [http://mac.github.com](http://mac.github.com).
+
 ##### Installing on Windows
 
 There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to [http://git-scm.com/download/win](http://git-scm.com/download/win) and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to [https://git-for-windows.github.io/](https://git-for-windows.github.io/).
@@ -158,6 +169,7 @@ There are also a few ways to install Git on Windows. The most official build is 
 To get an automated installation you can use the [Git Chocolatey package](https://chocolatey.org/packages/git). Note that the Chocolatey package is community maintained.
 
 Another easy way to get Git installed is by installing GitHub for Windows. The installer includes a command line version of Git as well as the GUI. It also works well with Powershell, and sets up solid credential caching and sane CRLF settings. We’ll learn more about those things a little later, but suffice it to say they’re things you want. You can download this from the GitHub for Windows website, at [http://windows.github.com](http://windows.github.com).
+
 ##### Installing from Source
 
 Some people may instead find it useful to install Git from source, because you’ll get the most recent version. The binary installers tend to be a bit behind, though as Git has matured in recent years, this has made less of a difference.
@@ -212,6 +224,7 @@ Git comes with a tool called `git config` that lets you get and set configuratio
 Each level overrides values in the previous level, so values in `.git/config` trump those in `/etc/gitconfig`.
 
 On Windows systems, Git looks for the `.gitconfig` file in the `$HOME` directory (`C:\Users\$USER` for most people). It also still looks for `/etc/gitconfig`, although it’s relative to the MSys root, which is wherever you decide to install Git on your Windows system when you run the installer. If you are using version 2.x or later of Git for Windows, there is also a system-level config file at `C:\Documents and Settings\All Users\Application Data\Git\config` on Windows XP, and in `C:\ProgramData\Git\config` on Windows Vista and newer. This config file can only be changed by `git config -f <file>` as an admin.
+
 ##### Your Identity
 
 The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
@@ -222,6 +235,7 @@ $ git config --global user.email johndoe@example.com
 Again, you need to do this only once if you pass the `--global` option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the `--global` option when you’re in that project.
 
 Many of the GUI tools will help you do this when you first run them.
+
 ##### Your Editor
 
 Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system’s default editor.
@@ -314,7 +328,7 @@ and type:
 ```
 $ git init
 ```
-This creates a new subdirectory named `.git` that contains all of your necessary repository files – a Git repository skeleton. At this point, nothing in your project is tracked yet. (See **Git Internals** for more information about exactly what files are contained in the `.git` directory you just created.)
+This creates a new subdirectory named `.git` that contains all of your necessary repository files – a Git repository skeleton. At this point, nothing in your project is tracked yet. (See [Git Internals](#) for more information about exactly what files are contained in the `.git` directory you just created.)
 
 If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few `git add` commands that specify the files you want to track, followed by a `git commit`:
 ```
@@ -323,9 +337,10 @@ $ git add LICENSE
 $ git commit -m 'initial project version'
 ```
 We’ll go over what these commands do in just a minute. At this point, you have a Git repository with tracked files and an initial commit.
+
 ##### Cloning an Existing Repository
 
-If you want to get a copy of an existing Git repository – for example, a project you’d like to contribute to – the command you need is `git clone`. If you’re familiar with other VCS systems such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction – instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run `git clone`. In fact, if your server disk gets corrupted, you can often use nearly any of the clones on any client to set the server back to the state it was in when it was cloned (you may lose some server-side hooks and such, but all the versioned data would be there – see **Git on the Server** for more details).
+If you want to get a copy of an existing Git repository – for example, a project you’d like to contribute to – the command you need is `git clone`. If you’re familiar with other VCS systems such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction – instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run `git clone`. In fact, if your server disk gets corrupted, you can often use nearly any of the clones on any client to set the server back to the state it was in when it was cloned (you may lose some server-side hooks and such, but all the versioned data would be there – see [Git on the Server](#) for more details).
 
 You clone a repository with `git clone [url]`. For example, if you want to clone the Git linkable library called libgit2, you can do so like this:
 ```
@@ -337,7 +352,7 @@ $ git clone https://github.com/libgit2/libgit2 mylibgit
 ```
 That command does the same thing as the previous one, but the target directory is called `mylibgit`.
 
-Git has a number of different transfer protocols you can use. The previous example uses the `https://` protocol, but you may also see `git://` or `user@server:path/to/repo.git`, which uses the SSH transfer protocol. **Git on the Server** will introduce all of the available options the server can set up to access your Git repository and the pros and cons of each.
+Git has a number of different transfer protocols you can use. The previous example uses the `https://` protocol, but you may also see `git://` or `user@server:path/to/repo.git`, which uses the SSH transfer protocol. [Git on the Server](#) will introduce all of the available options the server can set up to access your Git repository and the pros and cons of each.
 
 ### 2.2 Git Basics - Recording Changes to the Repository
 #### Recording Changes to the Repository
@@ -349,6 +364,7 @@ Remember that each file in your working directory can be in one of two states: t
 As you edit files, Git sees them as modified, because you’ve changed them since your last commit. You stage these modified files and then commit all your staged changes, and the cycle repeats.
 The lifecycle of the status of your files.
 ![Figure 8. The lifecycle of the status of your files.](https://git-scm.com/book/en/v2/images/lifecycle.png)
+
 ##### Checking the Status of Your Files
 
 The main tool you use to determine which files are in which state is the git status command. If you run this command directly after a clone, you should see something like this:
@@ -358,7 +374,7 @@ On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 ```
-This means you have a clean working directory – in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. For now, that branch is always “master”, which is the default; you won’t worry about it here. **Git Branching** will go over branches and references in detail.
+This means you have a clean working directory – in other words, none of your tracked files are modified. Git also doesn’t see any untracked files, or they would be listed here. Finally, the command tells you which branch you’re on and informs you that it has not diverged from the same branch on the server. For now, that branch is always “master”, which is the default; you won’t worry about it here. [Git Branching](#) will go over branches and references in detail.
 
 Let’s say you add a new file to your project, a simple README file. If the file didn’t exist before, and you run `git status`, you see your untracked file like so:
 ```
@@ -374,6 +390,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 You can see that your new README file is untracked, because it’s under the “Untracked files” heading in your status output. Untracked basically means that Git sees a file you didn’t have in the previous snapshot (commit); Git won’t start including it in your commit snapshots until you explicitly tell it to do so. It does this so you don’t accidentally begin including generated binary files or other files that you did not mean to include. You do want to start including README, so let’s start tracking the file.
+
 ##### Tracking New Files
 
 In order to begin tracking a new file, you use the command `git add`. To begin tracking the README file, you can run this:
@@ -391,6 +408,7 @@ Changes to be committed:
     new file:   README
 ```
 You can tell that it’s staged because it’s under the “Changes to be committed” heading. If you commit at this point, the version of the file at the time you ran `git add` is what will be in the historical snapshot. You may recall that when you ran `git init` earlier, you then ran `git add (files)` – that was to begin tracking files in your directory. The `git add` command takes a path name for either a file or a directory; if it’s a directory, the command adds all the files in that directory recursively.
+
 ##### Staging Modified Files
 
 Let’s change a file that was already tracked. If you change a previously tracked file called `CONTRIBUTING.md` and then run your `git status` command again, you get something that looks like this:
@@ -463,6 +481,7 @@ M  lib/simplegit.rb
 ?? LICENSE.txt
 ```
 New files that aren’t tracked have a `??` next to them, new files that have been added to the staging area have an `A`, modified files have an `M` and so on. There are two columns to the output - the left-hand column indicates the status of the staging area and the right-hand column indicates the status of the working tree. So for example in that output, the `README` file is modified in the working directory but not yet staged, while the `lib/simplegit.rb` file is modified and staged. The `Rakefile` was modified, staged and then modified again, so there are changes to it that are both staged and unstaged.
+
 ##### Ignoring Files
 
 Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked. These are generally automatically generated files such as log files or files produced by your build system. In such cases, you can create a file listing patterns to match them named `.gitignore`. Here is an example `.gitignore` file:
@@ -653,6 +672,7 @@ $ git commit -m "Story 182: Fix benchmarks for speed"
 Now you’ve created your first commit! You can see that the commit has given you some output about itself: which branch you committed to (`master`), what SHA-1 checksum the commit has (`463dc4f`), how many files were changed, and statistics about lines added and removed in the commit.
 
 Remember that the commit records the snapshot you set up in your staging area. Anything you didn’t stage is still sitting there modified; you can do another commit to add it to your history. Every time you perform a commit, you’re recording a snapshot of your project that you can revert to or compare to later.
+
 ##### Skipping the Staging Area
 
 Although it can be amazingly useful for crafting commits exactly how you want them, the staging area is sometimes a bit more complex than you need in your workflow. If you want to skip the staging area, Git provides a simple shortcut. Adding the `-a` option to the `git commit` command makes Git automatically stage every file that is already tracked before doing the commit, letting you skip the `git add` part:
@@ -672,6 +692,7 @@ $ git commit -a -m 'added new benchmarks'
  1 file changed, 5 insertions(+), 0 deletions(-)
 ```
 Notice how you don’t have to run `git add` on the `CONTRIBUTING.md` file in this case before you commit. That’s because the `-a` flag includes all changed files. This is convenient, but be careful; sometimes this flag will cause you to include unwanted changes.
+
 ##### Removing Files
 
 To remove a file from Git, you have to remove it from your tracked files (more accurately, remove it from your staging area) and then commit. The `git rm` command does that, and also removes the file from your working directory so you don’t see it as an untracked file the next time around.
@@ -717,6 +738,7 @@ Note the backslash (`\`) in front of the `*`. This is necessary because Git does
 $ git rm \*~
 ```
 This command removes all files whose names end with a ~.
+
 ##### Moving Files
 
 Unlike many other VCS systems, Git doesn’t explicitly track file movement. If you rename a file in Git, no metadata is stored in Git that tells it you renamed the file. However, Git is pretty smart about figuring that out after the fact – we’ll deal with detecting file movement a bit later.
@@ -947,6 +969,7 @@ Option &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Description
 `--graph` &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Display an ASCII graph of the branch and merge history beside the log output.
 
 `--pretty` &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Show commits in an alternate format. Options include oneline, short, full, fuller, and format (where you specify your own format).
+
 ##### Limiting Log Output
 
 In addition to output-formatting options, `git log` takes a number of useful limiting options – that is, options that let you show only a subset of commits. You’ve seen one such option already – the `-2` option, which show only the last two commits. In fact, you can do `-<n>`, where n is any integer to show the last n commits. In reality, you’re unlikely to use that often, because Git by default pipes all output through a pager so you see only one page of log output at a time.
@@ -1018,6 +1041,7 @@ $ git add forgotten_file
 $ git commit --amend
 ```
 You end up with a single commit – the second commit replaces the results of the first.
+
 ##### Unstaging a Staged File
 
 The next two sections demonstrate how to work with your staging area and working directory changes. The nice part is that the command you use to determine the state of those two areas also reminds you how to undo changes to them. For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type `git add *` and stage them both. How can you unstage one of the two? The `git status` command reminds you:
@@ -1055,6 +1079,7 @@ The command is a bit strange, but it works. The `CONTRIBUTING.md` file is modifi
 It’s true that `git reset` can be a dangerous command, especially if you provide the `--hard` flag. However, in the scenario described above, the file in your working directory is not touched, so it’s relatively safe.
 
 For now this magic invocation is all you need to know about the `git reset` command. We’ll go into much more detail about what `reset` does and how to master it to do really interesting things in Reset Demystified.
+
 ##### Unmodifying a Modified File
 
 What if you realize that you don’t want to keep your changes to the `CONTRIBUTING.md` file? How can you easily unmodify it – revert it back to what it looked like when you last committed (or initially cloned, or however you got it into your working directory)? Luckily, `git status` tells you how to do that, too. In the last example output, the unstaged area looks like this:
@@ -1085,7 +1110,6 @@ If you would like to keep the changes you’ve made to that file but still need 
 Remember, anything that is _committed_ in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an `--amend` commit can be recovered (see Data Recovery for data recovery). However, anything you lose that was never committed is likely never to be seen again.
 
 ### 2.5 Git Basics - Working with Remotes
-
 #### Working with Remotes
 
 To be able to collaborate on any Git project, you need to know how to manage your remote repositories. Remote repositories are versions of your project that are hosted on the Internet or network somewhere. You can have several of them, each of which generally is either read-only or read/write for you. Collaborating with others involves managing these remote repositories and pushing and pulling data to and from them when you need to share work. Managing remote repositories includes knowing how to add remote repositories, remove remotes that are no longer valid, manage various remote branches and define them as being tracked or not, and more. In this section, we’ll cover some of these remote-management skills.
