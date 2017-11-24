@@ -1,7 +1,7 @@
 ---
 name: Progyan Bhattacharya
 img: pg.png
-nickname: GOD
+nickname: PG
 website: http://codeprogyan.me
 email: progyanb@acm.org
 github: https://github.com/Progyan1997
