@@ -19,6 +19,10 @@ Bytes Club is an open source community by the students of WBUT In-House.
 
 Make sure you follow our [Contributing guidelines](/contributing).
 
+### Links
+
+* [How to as questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)
+
 ### Contact Us
 
 Contact us on: 
