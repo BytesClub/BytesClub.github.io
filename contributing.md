@@ -61,6 +61,14 @@ Keep in mind the following points while writting a commit message
 
 For more information about proper commit messages, read [this](https://chris.beams.io/posts/git-commit/).
 
+To add this by default, download the [commit message template](https://gist.githubusercontent.com/RudraNilBasu/afa9f64f9b7323e2c6e3476c4a8b7ddd/raw/83475f2c5f2ae6788bfae083bf2078b464483cbc/git_commit_message.txt), and run
+
+```
+$ git config --global commit.template /path/to/file
+```
+
+before committing.
+
 ### Coding Conventions
 
 We follow [the Linux Kernel's coding convention]({{ site.baseurl }}/docs/coding_style.pdf).
